@@ -1,0 +1,431 @@
+// Service Detail Page Styles
+.service-detail {
+    background-color: var(--white);
+    
+    &__image {
+        img {
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+    }
+    
+    &__content {
+        .service-detail__thumb {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            
+            img {
+                transition: transform 0.3s ease;
+                
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+    
+    &__content-inner {
+        .section-heading {
+            text-align: left;
+            margin-bottom: 2rem;
+            
+            .section-heading__title {
+                color: var(--gray-700);
+                font-weight: 700;
+            }
+            
+            .section-heading__desc {
+                color: var(--gray-600);
+                line-height: 1.7;
+            }
+        }
+    }
+}
+
+// Service Stats
+.service-stats {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.service-stat-card {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+    
+    &__number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        background: var(--main);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 0.5rem;
+    }
+    
+    &__label {
+        color: var(--gray-600);
+        font-weight: 500;
+        margin: 0;
+    }
+}
+
+// Service FAQ Section
+.service-faqs {
+    &__title {
+        color: var(--gray-700);
+        font-weight: 700;
+        margin-bottom: 2rem;
+        position: relative;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--main);
+            border-radius: 2px;
+        }
+    }
+}
+
+.service-faq-item {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        border-color: var(--main);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    &__question {
+        color: var(--gray-700);
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        
+        &::before {
+            content: 'Q: ';
+            color: var(--main);
+            font-weight: 700;
+        }
+    }
+    
+    &__answer {
+        color: var(--gray-600);
+        line-height: 1.6;
+        margin: 0;
+        
+        &::before {
+            content: 'A: ';
+            color: var(--main);
+            font-weight: 600;
+        }
+    }
+}
+
+// Service Contact CTA
+.service-contact-cta {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        border-color: var(--main);
+        transform: translateY(-2px);
+    }
+    
+    h4 {
+        color: var(--gray-700);
+        font-weight: 700;
+    }
+    
+    p {
+        color: var(--gray-600);
+    }
+}
+
+// Enhanced Service Sidebar
+.service-sidebar {
+    &__widget {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        
+        &-title {
+            color: var(--gray-700);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        &-desc {
+            color: var(--gray-600);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+    }
+    
+    &__links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+        li {
+            margin-bottom: 0.75rem;
+            
+            a {
+                color: var(--gray-600);
+                text-decoration: none;
+                padding: 0.5rem 0;
+                display: block;
+                border-bottom: 1px solid #f1f3f4;
+                transition: all 0.3s ease;
+                
+                &:hover {
+                    color: var(--main);
+                    padding-left: 10px;
+                    border-bottom-color: var(--main);
+                }
+            }
+        }
+    }
+}
+
+// Feature Cards
+.feature-card {
+    background: var(--white);
+    border: 1px solid #e8ecef;
+    border-radius: 12px;
+    padding: 24px;
+    transition: all 0.3s ease;
+    height: 100%;
+    
+    &:hover {
+        border-color: var(--main);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transform: translateY(-3px);
+    }
+    
+    &__icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, var(--main) 0%, #ff6b35 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        
+        i {
+            font-size: 24px;
+            color: var(--white);
+        }
+    }
+    
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--black);
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
+    
+    &__desc {
+        font-size: 14px;
+        color: var(--gray-700);
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+}
+
+// Benefits List
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 12px 0;
+        border-bottom: 1px solid #f0f0f0;
+        
+        &:last-child {
+            border-bottom: none;
+        }
+        
+        i {
+            font-size: 16px;
+            width: 20px;
+            flex-shrink: 0;
+        }
+        
+        span {
+            font-size: 15px;
+            color: var(--black);
+            font-weight: 500;
+        }
+    }
+}
+
+// Process Steps
+.process-steps {
+    .process-step {
+        &__number {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--main) 0%, #ff6b35 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            
+            span {
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--white);
+            }
+        }
+        
+        &__title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--black);
+            margin-bottom: 4px;
+        }
+        
+        &__desc {
+            font-size: 14px;
+            color: var(--gray-700);
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Responsive Design
+@media (max-width: 991.98px) {
+    .service-detail {
+        &__image {
+            margin-top: 30px;
+        }
+    }
+    
+    .feature-card {
+        margin-bottom: 20px;
+    }
+    
+    .benefits-list,
+    .process-steps {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .feature-card {
+        padding: 20px;
+        
+        &__icon {
+            width: 50px;
+            height: 50px;
+            
+            i {
+                font-size: 20px;
+            }
+        }
+        
+        &__title {
+            font-size: 16px;
+        }
+        
+        &__desc {
+            font-size: 13px;
+        }
+    }
+    
+    .process-steps {
+        .process-step {
+            &__number {
+                width: 35px;
+                height: 35px;
+                
+                span {
+                    font-size: 14px;
+                }
+            }
+            
+            &__title {
+                font-size: 15px;
+            }
+            
+            &__desc {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+// Dark Theme Support
+@media (prefers-color-scheme: dark) {
+    .service-detail {
+        background-color: var(--dark-bg, #1a1a1a);
+    }
+    
+    .feature-card {
+        background: var(--dark-card-bg, #2a2a2a);
+        border-color: var(--dark-border, #3a3a3a);
+        
+        &__title {
+            color: var(--dark-text, #ffffff);
+        }
+        
+        &__desc {
+            color: var(--dark-text-muted, #cccccc);
+        }
+    }
+    
+    .benefits-list {
+        &__item {
+            border-bottom-color: var(--dark-border, #3a3a3a);
+            
+            span {
+                color: var(--dark-text, #ffffff);
+            }
+        }
+    }
+    
+    .process-steps {
+        .process-step {
+            &__title {
+                color: var(--dark-text, #ffffff);
+            }
+            
+            &__desc {
+                color: var(--dark-text-muted, #cccccc);
+            }
+        }
+    }
+}
