@@ -7,7 +7,7 @@ const LogoWhite = () => {
     return (
         <>
             <Link to="/" className="mobile-menu__logo">
-                <img src={LogoWhiteImage} alt="Logo"/>
+                <img src={LogoWhiteImage} alt="Logo" style={{width: '160px', height: '70px', objectFit: 'contain'}}/>
             </Link>   
         </>
     );

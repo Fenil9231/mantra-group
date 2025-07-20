@@ -6,7 +6,7 @@ import Cta from '../components/Cta';
 import { useLocation } from 'react-router-dom';
 import BlogDetailsSection from '../components/BlogDetailsSection';
 // import { BlogDataContext } from '../contextApi/BlogDataContext';
-import PageTitle from '../common/PageTitle';
+import SEOHead from '../components/SEOHead';
 
 const BlogDetails = () => {
 
@@ -14,7 +14,36 @@ const BlogDetails = () => {
     
     return (
         <>
-            <PageTitle title="Mantra Group - Blog Details" />
+            <SEOHead 
+                title={`${location.state?.title || 'Blog Post'} - Mantra Group | Toronto Real Estate Blog`}
+                description={location.state?.desc ? location.state.desc.slice(0, 160) : 'Read the latest insights and tips about Toronto real estate market from Mantra Group\'s expert real estate professionals.'}
+                keywords="Toronto real estate blog, real estate tips, property market insights, home buying advice, selling tips, GTA real estate news"
+                canonicalUrl={`/blog-details`}
+                ogImage={location.state?.thumb || '/assets/images/blog-og.jpg'}
+                ogType="article"
+                structuredData={{
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    "headline": location.state?.title || 'Real Estate Blog Post',
+                    "description": location.state?.desc || 'Expert real estate insights and advice',
+                    "image": location.state?.thumb || '/assets/images/blog-default.jpg',
+                    "author": {
+                        "@type": "Organization",
+                        "name": "Mantra Group",
+                        "url": "https://mantra-group-toronto.com"
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Mantra Group",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": "/assets/images/logo.png"
+                        }
+                    },
+                    "datePublished": new Date().toISOString(),
+                    "dateModified": new Date().toISOString()
+                }}
+            />
 
             {/* Header */}
             <Header 

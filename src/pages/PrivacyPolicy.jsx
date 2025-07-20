@@ -179,9 +179,9 @@ const PrivacyPolicy = () => {
                                     </p>
                                     <div className="contact-info">
                                         <p><strong>Mantra Group</strong></p>
-                                        <p>Email: <a href="mailto:privacy@mantra-group.com">privacy@mantra-group.com</a></p>
-                                        <p>Phone: <a href="tel:+14165550123">(416) 555-0123</a></p>
-                                        <p>Address: 123 King Street West, Toronto, ON M5H 3T9</p>
+                                        <p>Email: <a href={`mailto:${import.meta.env.VITE_CONTACT_EMAIL || 'privacy@mantra-group.com'}`}>{import.meta.env.VITE_CONTACT_EMAIL || 'privacy@mantra-group.com'}</a></p>
+                                        <p>Phone: <a href={`tel:${import.meta.env.VITE_CONTACT_PHONE || '+1 647-560-0736'}`}>{import.meta.env.VITE_CONTACT_PHONE || '+1 647-560-0736'}</a></p>
+                                        <p>Address: {import.meta.env.VITE_BUSINESS_ADDRESS || '4040 Steeles Ave W, Woodbridge, ON L4L 4Y5'}</p>
                                     </div>
                                 </div>
 
