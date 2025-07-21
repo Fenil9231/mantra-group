@@ -5,13 +5,31 @@ import Breadcrumb from '../common/Breadcrumb';
 import Cta from '../components/Cta';
 import ContactTop from '../components/ContactTop';
 import ContactUsSection from '../components/ContactUsSection';
-import PageTitle from '../common/PageTitle';
-import { HelmetProvider } from 'react-helmet-async';
+import SEOHead from '../components/SEOHead';
 
 const Contact = () => {
     return (
         <>
-            <PageTitle title="Mantra Group - Contact Us" />
+            <SEOHead 
+                title="Contact Us - Mantra Group | Toronto Real Estate Experts"
+                description="Get in touch with Mantra Group for all your Toronto real estate needs. Professional consultation, property valuation, and personalized service. Contact us today!"
+                keywords="contact real estate agent Toronto, real estate consultation, property valuation, Toronto real estate contact, Mantra Group contact"
+                canonicalUrl={`${import.meta.env.VITE_SITE_URL || 'https://mantragroup.ca'}/contact`}
+                ogImage={`${import.meta.env.VITE_SITE_URL || 'https://mantragroup.ca'}/assets/images/og-contact.jpg`}
+                structuredData={{
+                    "@context": "https://schema.org",
+                    "@type": "ContactPage",
+                    "name": "Contact Mantra Group",
+                    "description": "Contact Toronto's premier real estate team",
+                    "url": `${import.meta.env.VITE_SITE_URL || 'https://mantragroup.ca'}/contact`,
+                    "mainEntity": {
+                        "@type": "RealEstateAgent",
+                        "name": "Mantra Group",
+                        "telephone": import.meta.env.VITE_BUSINESS_PHONE || '+1-416-555-0123',
+                        "email": import.meta.env.VITE_BUSINESS_EMAIL || 'info@mantragroup.ca'
+                    }
+                }}
+            />
 
             <main className="body-bg">
                 
@@ -41,7 +59,13 @@ const Contact = () => {
                 <ContactTop/>
 
                 <div className="contact-map address-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1150112.1628856962!2d44.64619029447154!3d23.086651461779507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sbd!4v1707037970965!5m2!1sen!2sbd" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe 
+                        src={import.meta.env.VITE_GOOGLE_MAPS_EMBED_URL || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.30943582457!2d-79.54286805!3d43.718371149999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sus!4v1707037970965!5m2!1sen!2sus"}
+                        allowFullScreen="" 
+                        loading="lazy" 
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Mantra Group Office Location"
+                    ></iframe>
                 </div>
 
                 {/* Contact Us Section */}

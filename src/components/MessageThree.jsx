@@ -5,7 +5,7 @@ import SectionHeading from '../common/SectionHeading';
 const contactInfo = {
     icon: 'assets/images/icons/phone-calling.svg',
     text: 'Call us anytime',
-    number: '+1 234 567 8900',
+    number: import.meta.env.VITE_CONTACT_PHONE || '+1 647-560-0736',
     desc: 'Real estate is a lucrative industry that involves the buying and selling of properties.'
 };
 

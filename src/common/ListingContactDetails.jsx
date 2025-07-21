@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ListingContactDetails = () => {
+const ListingContactDetails = ({ formData, handleInputChange }) => {
     return (
         <>
             <div className="card-item" id="propertyContactDetails">
@@ -11,16 +11,39 @@ const ListingContactDetails = () => {
                     <div className="card-body">
                         <div className="row gy-4">
                             <div className="col-md-4 col-sm-6 col-xs-6">
-                                <label htmlFor="Name" className="form-label">Your Name</label>
-                                <input type="text" id="Name" className="common-input" placeholder="Your Name"/>
+                                <label htmlFor="name" className="form-label">Your Name</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    className="common-input" 
+                                    placeholder="Your Name"
+                                    value={formData?.name || ''}
+                                    onChange={handleInputChange}
+                                    required
+                                />
                             </div>
                             <div className="col-md-4 col-sm-6 col-xs-6">
-                                <label htmlFor="Email" className="form-label">Your E-mail</label>
-                                <input type="email" id="Email" className="common-input" placeholder="Your E-Mail"/>
+                                <label htmlFor="email" className="form-label">Your E-mail</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    className="common-input" 
+                                    placeholder="Your E-Mail"
+                                    value={formData?.email || ''}
+                                    onChange={handleInputChange}
+                                    required
+                                />
                             </div>
                             <div className="col-md-4 col-sm-6 col-xs-6">
-                                <label htmlFor="Phone" className="form-label">Phone Number</label>
-                                <input type="tel" id="Phone" className="common-input" placeholder="Phone Number"/>
+                                <label htmlFor="phone" className="form-label">Phone Number</label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    className="common-input" 
+                                    placeholder="Phone Number"
+                                    value={formData?.phone || ''}
+                                    onChange={handleInputChange}
+                                />
                             </div>
                         </div>
                     </div>

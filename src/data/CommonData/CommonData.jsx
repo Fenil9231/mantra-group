@@ -5,17 +5,17 @@ import React from 'react';
 export const offCanvasInfos = [
     {
         icon: <i className="fas fa-map-marker-alt"></i>,
-        text: '123 King Street West, Toronto, ON M5H 3T9',
+        text: import.meta.env.VITE_BUSINESS_ADDRESS || '4040 Steeles Ave W, Woodbridge, ON L4L 4Y5',
         link: ''
     },
     {
         icon: <i className="fas fa-phone"></i>,
-        text: ['+(1) 416 555 0123', '+(1) 416 555 0456'],
+        text: [import.meta.env.VITE_CONTACT_PHONE || '+1 647-560-0736', import.meta.env.VITE_CONTACT_PHONE || '+1 647-560-0736'],
         link: ['tel:', 'tel:']
     },
     {
         icon: <i className="fas fa-envelope"></i>,
-        text: ['info@torontorealty.com', 'contact@torontorealty.com'],
+        text: [import.meta.env.VITE_CONTACT_EMAIL || 'info@mantragroup.ca', import.meta.env.VITE_CONTACT_EMAIL || 'info@mantragroup.ca'],
         link: ['mailto:', 'mailto:']
     }
 ];
@@ -24,19 +24,19 @@ export const offCanvasInfos = [
 // Social List
 export const socialLists = [
     {
-        link: 'https://www.facebook.com',
+        link: import.meta.env.VITE_FACEBOOK_URL || 'https://facebook.com/mantragroup',
         icon: <i className="fab fa-facebook-f"></i>
     },
     {
-        link: 'https://www.twitter.com',
+        link: import.meta.env.VITE_TWITTER_URL || 'https://twitter.com/mantragroup',
         icon: <i className="fab fa-twitter"></i>
     },
     {
-        link: 'https://www.linkedin.com',
+        link: import.meta.env.VITE_LINKEDIN_URL || 'https://linkedin.com/company/mantragroup',
         icon: <i className="fab fa-linkedin-in"></i>
     },
     {
-        link: 'https://www.pinterest.com',
+        link: import.meta.env.VITE_INSTAGRAM_URL || 'https://instagram.com/mantragroup',
         icon: <i className="fab fa-instagram"></i>
     },
 ]
@@ -65,17 +65,17 @@ export const starRatings = [
 export const topHeaderInfos = [
     {
         icon: <i className="fas fa-phone"></i>,
-        text: '(416) 555-0129',
+        text: import.meta.env.VITE_BUSINESS_PHONE || '(416) 555-0129',
         link: 'tel:'
     },
     {
         icon: <i className="fas fa-envelope"></i>,
-        text: 'info@torontorealty.com',
+        text: import.meta.env.VITE_BUSINESS_EMAIL || 'info@mantragroup.ca',
         link: 'mailto:'
     },
     {
         icon: <i className="fas fa-map-marker-alt"></i>,
-        text: '123 King Street West, Toronto, ON',
+        text: import.meta.env.VITE_BUSINESS_ADDRESS || '123 King Street West, Toronto, ON',
         link: ''
     }
 ]
@@ -112,12 +112,12 @@ export const footerInfos = [
     {
         icon: <i className="fas fa-map-marker-alt"></i>,
         text: 'Address',
-        address: '123 King Street West, Toronto, ON M5H 3T9'
+        address: import.meta.env.VITE_BUSINESS_ADDRESS || '123 King Street West, Toronto, ON M5H 3T9'
     },
     {
         icon: <i className="fas fa-phone"></i>,
         text: 'Phone Number',
-        address: '(416) 555-0123'
+        address: import.meta.env.VITE_BUSINESS_PHONE || '(416) 555-0123'
     }
 ]
 
@@ -145,6 +145,10 @@ export const footerServiceLinks = [
 ]
 
 export const footerUsefulLinks = [ 
+     {
+        text: 'Services',
+        link: '/services'
+    },
     {
         text: 'Blog',
         link: '/blog'
@@ -162,10 +166,6 @@ export const footerUsefulLinks = [
         link: '/about-us'
     },
     {
-        text: 'Services',
-        link: '/services'
-    },
-    {
         text: 'Contact',
         link: '/contact'
     },
@@ -180,32 +180,32 @@ import FooterGallery6 from '../../../public/assets/images/thumbs/gallery6.png';
 export const footerGallery = [ 
     {
         img: FooterGallery1,
-        link: 'https://www.instagram.com',
+        link: import.meta.env.VITE_INSTAGRAM_URL || 'https://instagram.com/mantragroup',
         icon: <i className="fab fa-instagram"></i>
     },
     {
         img: FooterGallery2,
-        link: 'https://www.instagram.com',
+        link: import.meta.env.VITE_INSTAGRAM_URL || 'https://instagram.com/mantragroup',
         icon: <i className="fab fa-instagram"></i>
     },
     {
         img: FooterGallery3,
-        link: 'https://www.instagram.com',
+        link: import.meta.env.VITE_INSTAGRAM_URL || 'https://instagram.com/mantragroup',
         icon: <i className="fab fa-instagram"></i>
     },
     {
         img: FooterGallery4,
-        link: 'https://www.instagram.com',
+        link: import.meta.env.VITE_INSTAGRAM_URL || 'https://instagram.com/mantragroup',
         icon: <i className="fab fa-instagram"></i>
     },
     {
         img: FooterGallery5,
-        link: 'https://www.instagram.com',
+        link: import.meta.env.VITE_INSTAGRAM_URL || 'https://instagram.com/mantragroup',
         icon: <i className="fab fa-instagram"></i>
     },
     {
         img: FooterGallery6,
-        link: 'https://www.instagram.com',
+        link: import.meta.env.VITE_INSTAGRAM_URL || 'https://instagram.com/mantragroup',
         icon: <i className="fab fa-instagram"></i>
     },
 ]

@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Formik, useFormik, Form, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
 import { ToastContainer, toast } from 'react-toastify';
+import ServerlessEmailService from '../services/emailServiceServerless';
 
 const ValidationForm = (props) => {
+    const [isSubmitting, setIsSubmitting] = useState(false);
     
     const formik = useFormik({
         initialValues: {
@@ -22,12 +24,31 @@ const ValidationForm = (props) => {
             message: yup .string().min(5, "Message must have minimum 5 characters"),
         }),
     
-        onSubmit: (values, { resetForm }) => {
-          // alert(JSON.stringify(values, null, 2));
-          resetForm({ values: "" });
-          toast.success("Congratulations! You Have Submitted Successfully.", {
-            theme: "colored",
-          });
+        onSubmit: async (values, { resetForm }) => {
+          setIsSubmitting(true);
+          try {
+            // Send contact form email
+            await ServerlessEmailService.sendContactForm({
+              name: values.name,
+              email: values.email,
+              phone: values.phone,
+              address: values.address,
+              message: values.message,
+              subject: props.subject || 'New Contact Form Submission'
+            });
+            
+            resetForm({ values: "" });
+            toast.success("Thank you! Your message has been sent successfully. We'll get back to you soon.", {
+              theme: "colored",
+            });
+          } catch (error) {
+            console.error('Error sending email:', error);
+            toast.error("Sorry, there was an error sending your message. Please try again.", {
+              theme: "colored",
+            });
+          } finally {
+            setIsSubmitting(false);
+          }
         },
     });
 
@@ -178,7 +199,9 @@ const ValidationForm = (props) => {
                     </div>
 
                     <div className="col-lg-12">
-                        <button type="submit" className="btn btn-main w-100"> Send Message </button>
+                        <button type="submit" className="btn btn-main w-100" disabled={isSubmitting}>
+                            {isSubmitting ? 'Sending...' : 'Send Message'}
+                        </button>
                     </div>
                 </div>
             </form>   

@@ -7,10 +7,10 @@ const Logo = () => {
     return   (
         <>
             <Link to="/" className="link">
-                <img src={LogoImg} alt="Logo"/>
+                <img src={LogoImg} alt="Logo" style={{width: '160px', height: '70px', objectFit: 'contain'}}/>
             </Link>
         </>
     );
 };
 
-export default Logo;    
+export default Logo;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { addAmenities } from '../data/OthersPageData/OthersPageData';
 
-const ListingPropertyInformation = () => {
+const ListingPropertyInformation = ({ formData, handleInputChange }) => {
     return (
         <>
             <div className="card-item" id="propertyInformation">
@@ -12,36 +12,92 @@ const ListingPropertyInformation = () => {
                 <div className="card-body">
                     <div className="row gy-4">
                         <div className="col-xl-3 col-sm-6 col-xs-6">
-                            <label htmlFor="PropertyId" className="form-label">Property Id</label>
-                            <input type="text" className="common-input" id="PropertyId" placeholder="Property Id"/>
+                            <label htmlFor="propertyId" className="form-label">Property Id</label>
+                            <input 
+                                type="text" 
+                                className="common-input" 
+                                id="propertyId" 
+                                placeholder="Property Id"
+                                value={formData?.propertyId || ''}
+                                onChange={handleInputChange}
+                            />
                         </div>
                         <div className="col-xl-3 col-sm-6 col-xs-6">
-                            <label htmlFor="AreaSize" className="form-label">Area Size</label>
-                            <input type="text" className="common-input" id="AreaSize" placeholder="Area Size"/>
+                            <label htmlFor="areaSize" className="form-label">Area Size</label>
+                            <input 
+                                type="text" 
+                                className="common-input" 
+                                id="areaSize" 
+                                placeholder="Area Size"
+                                value={formData?.areaSize || ''}
+                                onChange={handleInputChange}
+                            />
                         </div>
                         <div className="col-xl-3 col-sm-6 col-xs-6">
-                            <label htmlFor="SizePrefix" className="form-label">Size Prefix</label>
-                            <input type="text" className="common-input" id="SizePrefix" placeholder="Size Prefix"/>
+                            <label htmlFor="sizePrefix" className="form-label">Size Prefix</label>
+                            <input 
+                                type="text" 
+                                className="common-input" 
+                                id="sizePrefix" 
+                                placeholder="Size Prefix"
+                                value={formData?.sizePrefix || ''}
+                                onChange={handleInputChange}
+                            />
                         </div>
                         <div className="col-xl-3 col-sm-6 col-xs-6">
-                            <label htmlFor="LandArea" className="form-label">Land Area</label>
-                            <input type="text" className="common-input" id="LandArea" placeholder="Land Area"/>
+                            <label htmlFor="landArea" className="form-label">Land Area</label>
+                            <input 
+                                type="text" 
+                                className="common-input" 
+                                id="landArea" 
+                                placeholder="Land Area"
+                                value={formData?.landArea || ''}
+                                onChange={handleInputChange}
+                            />
                         </div>
                         <div className="col-xl-3 col-sm-6 col-xs-6">
-                            <label htmlFor="Bedrooms" className="form-label">Bedrooms</label>
-                            <input type="text" className="common-input" id="Bedrooms" placeholder="Bedrooms"/>
+                            <label htmlFor="bedrooms" className="form-label">Bedrooms</label>
+                            <input 
+                                type="number" 
+                                className="common-input" 
+                                id="bedrooms" 
+                                placeholder="Bedrooms"
+                                value={formData?.bedrooms || ''}
+                                onChange={handleInputChange}
+                            />
                         </div>
                         <div className="col-xl-3 col-sm-6 col-xs-6">
-                            <label htmlFor="Bathrooms" className="form-label">Bathrooms</label>
-                            <input type="text" className="common-input" id="Bathrooms" placeholder="Bathrooms"/>
+                            <label htmlFor="bathrooms" className="form-label">Bathrooms</label>
+                            <input 
+                                type="number" 
+                                className="common-input" 
+                                id="bathrooms" 
+                                placeholder="Bathrooms"
+                                value={formData?.bathrooms || ''}
+                                onChange={handleInputChange}
+                            />
                         </div>
                         <div className="col-xl-3 col-sm-6 col-xs-6">
-                            <label htmlFor="Garages" className="form-label">Garages</label>
-                            <input type="text" className="common-input" id="Garages" placeholder="Garages"/>
+                            <label htmlFor="garages" className="form-label">Garages</label>
+                            <input 
+                                type="number" 
+                                className="common-input" 
+                                id="garages" 
+                                placeholder="Garages"
+                                value={formData?.garages || ''}
+                                onChange={handleInputChange}
+                            />
                         </div>
                         <div className="col-xl-3 col-sm-6 col-xs-6">
-                            <label htmlFor="YearBuild" className="form-label">Year Build</label>
-                            <input type="text" className="common-input" id="YearBuild" placeholder="Year Build"/>
+                            <label htmlFor="yearBuild" className="form-label">Year Build</label>
+                            <input 
+                                type="number" 
+                                className="common-input" 
+                                id="yearBuild" 
+                                placeholder="Year Build"
+                                value={formData?.yearBuild || ''}
+                                onChange={handleInputChange}
+                            />
                         </div>
                         <div className="col-12">
                             <h6 className="checkboxes__title mt-4 fw-500 font-18">Amenities</h6>

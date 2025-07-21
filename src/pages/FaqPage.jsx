@@ -6,12 +6,45 @@ import Cta from '../components/Cta';
 import FaqTwo from '../components/FaqTwo';
 import FaqContactUs from '../components/FaqContactUs';
 import CounterFour from '../components/CounterFour';
-import PageTitle from '../common/PageTitle';
+import SEOHead from '../components/SEOHead';
 
 const FaqPage = () => {
     return (
         <>
-        <PageTitle title="Mantra Group - Frequently Ask Question" />
+            <SEOHead 
+                title="Frequently Asked Questions - Mantra Group | Toronto Real Estate FAQ"
+                description="Get answers to common questions about buying, selling, and investing in Toronto real estate. Expert guidance from Mantra Group's experienced real estate professionals."
+                keywords="Toronto real estate FAQ, real estate questions, buying home Toronto, selling property GTA, real estate process, Mantra Group FAQ"
+                canonicalUrl="/faq"
+                ogImage="/assets/images/faq-og.jpg"
+                structuredData={{
+                    "@context": "https://schema.org",
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": "How do I start the home buying process in Toronto?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Start by getting pre-approved for a mortgage, then work with our experienced real estate agents to find properties that match your criteria and budget."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What are the current market conditions in the GTA?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Our team provides up-to-date market analysis and trends to help you make informed decisions about buying or selling in the Greater Toronto Area."
+                            }
+                        }
+                    ],
+                    "provider": {
+                        "@type": "RealEstateAgent",
+                        "name": "Mantra Group",
+                        "url": "https://mantra-group-toronto.com"
+                    }
+                }}
+            />
 
             {/* Header */}
             <Header 

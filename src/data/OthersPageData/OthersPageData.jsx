@@ -361,17 +361,17 @@ export const mapLocations = [
         title: 'Toronto',
         mapLocationsCards: [
             {
-                title: 'Downtown Toronto',
+                title: 'Main Office - Woodbridge',
                 mapLocationsContacts: [
                     {
                         icon: <i className="fas fa-map-marker-alt"></i>,
                         title: 'Address',
-                        address: ' 123 King Street West, Toronto, ON M5H 3T9 '
+                        address: ' 4040 Steeles Ave W, Woodbridge, ON L4L 4Y5 '
                     },
                     {
                         icon: <i className="fas fa-phone"></i>,
                         title: 'Phone Number',
-                        address: ' (416) 555-0123 '
+                        address: ' +1 647-560-0736 '
                     },
                 ],
                 mapLocationsButtons: [
@@ -886,38 +886,38 @@ export const accountTabs = [
 
 export const accountAddress = [ 
     {
-        title: 'Charging Address alter',
+        title: 'Billing Address',
         name: 'Rosalina D. William',
         accountAddressInfos: [
             {
                 title: 'location:',
-                text: '123 King Street West, Toronto, ON M5H 3T9'
+                text: import.meta.env.VITE_BUSINESS_ADDRESS || '4040 Steeles Ave W, Woodbridge, ON L4L 4Y5'
             },
             {
                 title: 'Phone:',
-                text: ' (416) 555-0123'
+                text: import.meta.env.VITE_CONTACT_PHONE || '+1 647-560-0736'
             },
             {
                 title: 'Email:',
-                text: ' example@gmail.com'
+                text: import.meta.env.VITE_CONTACT_EMAIL || 'info@mantragroup.ca'
             },
         ]
     },
     {
-        title: 'Transporting Address alter',
+        title: 'Shipping Address',
         name: 'Rosalina D. William',
         accountAddressInfos: [
             {
                 title: 'location:',
-                text: '456 Bay Street, Toronto, ON M5G 2C2'
+                text: import.meta.env.VITE_BUSINESS_ADDRESS || '4040 Steeles Ave W, Woodbridge, ON L4L 4Y5'
             },
             {
                 title: 'Phone:',
-                text: ' (416) 555-0456'
+                text: import.meta.env.VITE_CONTACT_PHONE || '+1 647-560-0736'
             },
             {
                 title: 'Email:',
-                text: ' example@gmail.com'
+                text: import.meta.env.VITE_CONTACT_EMAIL || 'info@mantragroup.ca'
             },
         ]
     },

@@ -1,6 +1,5 @@
 import React from 'react';
 import { socialLists } from '../data/CommonData/CommonData';
-import { Link } from 'react-router-dom';
 
 const SocialList = () => {
     return (
@@ -9,7 +8,7 @@ const SocialList = () => {
                 socialLists.map((socialList, index) => {
                     return (
                         <li className="social-list__item" key={index}>
-                            <Link to={socialList.link} className="social-list__link flx-center">{socialList.icon}</Link>
+                            <a href={socialList.link} className="social-list__link flx-center" target="_blank" rel="noopener noreferrer">{socialList.icon}</a>
                         </li>
                     )
                 })

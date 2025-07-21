@@ -18,10 +18,10 @@ const AccountAddressTab = () => {
                             <h6 className="text-poppins mb-2">Charging Address alter</h6>
                             <span className="fw-semibold text-poppins font-14 mb-4">{userData.username}</span>
                             <div className="contact-info d-flex gap-3 align-items-center mb-2">
-                                <div className="contact-info__content"><span className="contact-info__address"><strong className="fw-500">location:</strong>123 King Street West, Toronto, ON M5H 3T9</span></div>
+                                <div className="contact-info__content"><span className="contact-info__address"><strong className="fw-500">location:</strong>{import.meta.env.VITE_BUSINESS_ADDRESS || '4040 Steeles Ave W, Woodbridge, ON L4L 4Y5'}</span></div>
                             </div>
                             <div className="contact-info d-flex gap-3 align-items-center mb-2">
-                                <div className="contact-info__content"><span className="contact-info__address"><strong className="fw-500">Phone:</strong> (416) 555-0123</span></div>
+                                <div className="contact-info__content"><span className="contact-info__address"><strong className="fw-500">Phone:</strong> {import.meta.env.VITE_CONTACT_PHONE || '+1 647-560-0736'}</span></div>
                             </div>
                             <div className="contact-info d-flex gap-3 align-items-center mb-2">
                                 <div className="contact-info__content"><span className="contact-info__address"><strong className="fw-500">Email:</strong> {userData.email}</span></div>
@@ -36,10 +36,10 @@ const AccountAddressTab = () => {
                             <h6 className="text-poppins mb-2">Transporting Address alter</h6>
                             <span className="fw-semibold text-poppins font-14 mb-4">{userData.username}</span>
                             <div className="contact-info d-flex gap-3 align-items-center mb-2">
-                                <div className="contact-info__content"><span className="contact-info__address"><strong className="fw-500">location:</strong>456 Bay Street, Toronto, ON M5G 2C2</span></div>
+                                <div className="contact-info__content"><span className="contact-info__address"><strong className="fw-500">location:</strong>{import.meta.env.VITE_BUSINESS_ADDRESS || '4040 Steeles Ave W, Woodbridge, ON L4L 4Y5'}</span></div>
                             </div>
                             <div className="contact-info d-flex gap-3 align-items-center mb-2">
-                                <div className="contact-info__content"><span className="contact-info__address"><strong className="fw-500">Phone:</strong> (416) 555-0456</span></div>
+                                <div className="contact-info__content"><span className="contact-info__address"><strong className="fw-500">Phone:</strong> {import.meta.env.VITE_CONTACT_PHONE || '+1 647-560-0736'}</span></div>
                             </div>
                             <div className="contact-info d-flex gap-3 align-items-center mb-2">
                                 <div className="contact-info__content"><span className="contact-info__address"><strong className="fw-500">Email:</strong> {userData.email}</span></div>

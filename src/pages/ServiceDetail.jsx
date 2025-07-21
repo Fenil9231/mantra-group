@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
-import PageTitle from '../common/PageTitle';
+import SEOHead from '../components/SEOHead';
 import SectionHeading from '../common/SectionHeading';
 import Cta from '../components/Cta';
 import Counter from '../components/Counter';
@@ -630,7 +630,13 @@ const ServiceDetail = () => {
     if (!service) {
         return (
             <>
-                <PageTitle title="Service Not Found - Mantra Group" />
+                <SEOHead 
+                    title="Service Not Found - Mantra Group | Toronto Real Estate Services"
+                    description="The requested service page could not be found. Explore our comprehensive real estate services in Toronto and GTA."
+                    keywords="real estate services Toronto, property services, service not found"
+                    canonicalUrl="/service-detail"
+                    ogImage="/assets/images/service-og.jpg"
+                />
                 <Header 
                     headerClass="dark-header has-border" 
                     logoBlack={false}
@@ -657,10 +663,34 @@ const ServiceDetail = () => {
 
     return (
         <>
-            <PageTitle 
-                title={`${service.title} - Mantra Group`} 
+            <SEOHead 
+                title={`${service.title} - Mantra Group | Toronto Real Estate Services`}
                 description={service.metaDescription}
                 keywords={service.keywords?.join(', ')}
+                canonicalUrl={`/service-detail/${serviceId}`}
+                ogImage={service.image}
+                structuredData={{
+                    "@context": "https://schema.org",
+                    "@type": "Service",
+                    "name": service.title,
+                    "description": service.description,
+                    "provider": {
+                        "@type": "RealEstateAgent",
+                        "name": "Mantra Group",
+                        "url": "https://mantra-group-toronto.com",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Toronto",
+                            "addressRegion": "ON",
+                            "addressCountry": "CA"
+                        }
+                    },
+                    "serviceType": service.title,
+                    "areaServed": {
+                        "@type": "Place",
+                        "name": "Greater Toronto Area"
+                    }
+                }}
             />
             
             {/* Header */}
