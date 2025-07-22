@@ -115,11 +115,8 @@ const PropertyDetailsSection = () => {
                             <div className="property-details-item">
                                 <h6 className="property-details-item__title">House</h6>
                                 <div className="property-details-item__content">
-                                    <div className="house-content position-relative">
+                                    <div className="house-content">
                                         <img src={houseThumb} alt="House Thumb"/>
-                                        <Link to="https://www.youtube.com/watch?v=pPl3ZZdTP3g" className="popup-video-link video-popup__button style-two">
-                                            <i className="fas fa-play text-gradient"></i>
-                                        </Link>
                                     </div>
                                 </div>
                             </div>

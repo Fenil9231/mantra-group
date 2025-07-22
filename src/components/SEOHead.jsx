@@ -2,14 +2,14 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const SEOHead = ({
-  title = 'Cityscape Real Estate - Premium Properties & Real Estate Services',
-  description = 'Discover premium real estate properties with Cityscape Real Estate. We offer comprehensive property services, expert guidance, and the finest selection of homes, apartments, and commercial spaces.',
+  title = 'Mantra Group - Premium Properties & Real Estate Services',
+    description = 'Discover premium real estate properties with Mantra Group. We offer comprehensive property services, expert guidance, and the finest selection of homes, apartments, and commercial spaces.',
   keywords = 'real estate, properties, homes for sale, apartments, commercial real estate, property investment, real estate agent, property management',
   canonicalUrl = '',
   ogImage = '/assets/images/og-image.jpg',
   ogType = 'website',
   twitterCard = 'summary_large_image',
-  author = 'Cityscape Real Estate',
+  author = 'Mantra Group',
   structuredData = null,
   noIndex = false
 }) => {
@@ -20,7 +20,7 @@ const SEOHead = ({
   const defaultStructuredData = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "name": "Cityscape Real Estate",
+    "name": "Mantra Group",
     "description": description,
     "url": siteUrl,
     "logo": `${siteUrl}/assets/images/logo.png`,
@@ -39,10 +39,10 @@ const SEOHead = ({
       "addressCountry": "US"
     },
     "sameAs": [
-      "https://www.facebook.com/cityscaperealestate",
-      "https://www.twitter.com/cityscaperealestate",
-      "https://www.linkedin.com/company/cityscaperealestate",
-      "https://www.instagram.com/cityscaperealestate"
+      "https://www.facebook.com/mantragroup",
+                "https://www.twitter.com/mantragroup",
+                "https://www.linkedin.com/company/mantragroup",
+                "https://www.instagram.com/mantragroup"
     ]
   };
 
@@ -64,7 +64,7 @@ const SEOHead = ({
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={fullCanonicalUrl} />
       <meta property="og:image" content={fullOgImage} />
-      <meta property="og:site_name" content="Cityscape Real Estate" />
+      <meta property="og:site_name" content="Mantra Group" />
       
       {/* Twitter Card Meta Tags */}
       <meta name="twitter:card" content={twitterCard} />

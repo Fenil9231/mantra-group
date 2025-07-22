@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SocialList from './SocialList';
 import FooterLogoDesc from './footer/FooterLogoDesc';
-import FooterServiceItem from './footer/FooterServiceItem';
+import FooterContactItem from './footer/FooterContactItem';
 import FooterUsefulItem from './footer/FooterUsefulItem';
 import { footerGallery } from '../data/CommonData/CommonData';
 import FooterBottom from './FooterBottom';
@@ -29,7 +29,7 @@ const FooterFive = () => {
                             <FooterUsefulItem/>
                         </div>
                         <div className="col-xl-3 col-sm-6 col-xsm-6">
-                            <FooterServiceItem/>
+                            <FooterContactItem/>
                         </div>
                         <div className="col-xl-3 col-sm-6 col-xsm-6">
                             <div className="footer-item">

@@ -11,9 +11,9 @@ const Team = ({ sectionClass }) => {
 
                 <SectionHeading
                         headingClass=""  
-                        subtitle="Our Professionals"
+                        subtitle="Our Team"
                         subtitleClass="" 
-                        title="Investment and Growth through Real Estate" 
+                        title="Meet Our Real Estate Professionals" 
                         renderDesc={false}
                         desc=""
                         renderButton={false}

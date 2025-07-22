@@ -398,7 +398,7 @@ export const mapLocations = [
                     {
                         icon: <i className="fas fa-phone"></i>,
                         title: 'Phone Number',
-                        address: ' (416) 555-0456 '
+                        address: ' +1 647-560-0736 '
                     },
                 ],
                 mapLocationsButtons: [
@@ -425,7 +425,7 @@ export const mapLocations = [
                     {
                         icon: <i className="fas fa-phone"></i>,
                         title: 'Phone Number',
-                        address: ' (416) 555-0789 '
+                        address: ' +1 647-560-0736 '
                     },
                 ],
                 mapLocationsButtons: [
@@ -452,7 +452,7 @@ export const mapLocations = [
                     {
                         icon: <i className="fas fa-phone"></i>,
                         title: 'Phone Number',
-                        address: ' (416) 555-0321 '
+                        address: ' +1 647-560-0736 '
                     },
                 ],
                 mapLocationsButtons: [
@@ -710,20 +710,20 @@ import teamImg3 from '../../../public/assets/images/thumbs/team3.png';
 export const teams = [
     {
         thumb: teamImg1,
-        name: 'Annette Black',
-        designation: ' President of Sales ',
+        name: 'Sarah Johnson',
+        designation: 'Senior Real Estate Agent',
         shareIcon: <i className="fas fa-share-alt"></i>
     },  
     {
         thumb: teamImg2,
-        name: 'Savannah Nguyen',
-        designation: 'Manager of Sales',
+        name: 'Michael Chen',
+        designation: 'Commercial Property Specialist',
         shareIcon: <i className="fas fa-share-alt"></i>
     },  
     {
         thumb: teamImg3,
-        name: 'Bessie Cooper',
-        designation: 'Director of Sales',
+        name: 'Emily Rodriguez',
+        designation: 'Investment Property Advisor',
         shareIcon: <i className="fas fa-share-alt"></i>
     },  
 ]
@@ -815,7 +815,7 @@ export const cartItems = [
         thumb: cartThumb1,
         title: '3 Rooms Downtown Toronto',
         locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '123 King Street West, Toronto, ON',
+        location: '4040 Steeles Ave W, Woodbridge, ON L4L 4Y5',
         price: '85.10'
     },
     {       
@@ -932,7 +932,7 @@ export const propertyTables = [
     {
         thumb: PropertyTableThumb1,
         title: '3 Rooms Downtown Toronto',
-        location: ' 123 King Street West, Toronto, ON ',
+        location: ' 4040 Steeles Ave W, Woodbridge, ON L4L 4Y5 ',
         locationIcon: <i className="fas fa-map-marker-alt"></i>,
         price: '$85.00',
         date: '17/02/2024',
@@ -1071,28 +1071,28 @@ export const projectSidebarLists = [
 // ========================= Project Page Data End =========================
 export const contactTopInfos = [
     {
-        icon: <i className="fas fa-paper-plane"></i>,
-        title: 'Email',
-        textOne: 'info@mantra-group.com',
-        textTwo: 'sales@mantra-group.com',
+        icon: <i className="fas fa-envelope"></i>,
+        title: 'Email Us',
+        textOne: 'info@realestate.ca',
+        textTwo: 'sales@realestate.ca',
         link: 'mailto:'
     },
     {
         icon: <i className="fas fa-map-marker-alt"></i>,
-        title: 'Head Office',
-        text: '123 King Street West, Suite 1500, Toronto, ON M5H 3T9',
+        title: 'Our Location',
+        text: 'Greater Toronto Area, Ontario, Canada',
     },
     {
         icon: <i className="fas fa-phone"></i>,
-        title: 'Phone Numbers',
-        textOne: '(416) 555-0123',
-        textTwo: '(416) 555-0124',
+        title: 'Call Us',
+        textOne: '+1 (416) 555-0123',
+        textTwo: '+1 (647) 555-0456',
         link: 'tel:'
     },
     {
         icon: <i className="fas fa-clock"></i>,
-        title: 'Business Hours',
-        text: 'Mon-Fri: 9:00 AM - 6:00 PM, Sat: 10:00 AM - 4:00 PM',
+        title: 'Office Hours',
+        text: 'Monday - Friday: 9:00 AM - 7:00 PM, Saturday: 10:00 AM - 5:00 PM',
     },
 ]
 // ========================= Project Page Data End =========================

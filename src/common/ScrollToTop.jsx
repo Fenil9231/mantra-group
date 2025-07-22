@@ -17,12 +17,20 @@ const ScrollToTop = () => {
     
     const scrollTop = React.useRef()
     React.useEffect(() => {
-        window.addEventListener('scroll', (e) => {
-            window.scrollY > 200 
-            ? scrollTop.current.style.visibility = 'visible'
-            : scrollTop.current.style.visibility = 'hidden'
-        })
-    }) 
+        const handleScroll = () => {
+            if (scrollTop.current) {
+                window.scrollY > 200 
+                ? scrollTop.current.style.visibility = 'visible'
+                : scrollTop.current.style.visibility = 'hidden'
+            }
+        }
+        
+        window.addEventListener('scroll', handleScroll)
+        
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, []) 
     
     return (
         <>

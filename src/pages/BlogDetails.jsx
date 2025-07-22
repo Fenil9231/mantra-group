@@ -6,7 +6,10 @@ import Cta from '../components/Cta';
 import { useLocation } from 'react-router-dom';
 import BlogDetailsSection from '../components/BlogDetailsSection';
 // import { BlogDataContext } from '../contextApi/BlogDataContext';
+import Service from '../components/Service';
 import SEOHead from '../components/SEOHead';
+import MobileMenu from '../common/MobileMenu';
+import OffCanvas from '../common/OffCanvas';
 
 const BlogDetails = () => {
 
@@ -52,14 +55,20 @@ const BlogDetails = () => {
                 logoWhite={true}
                 headerMenusClass="mx-auto"
                 btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
-                btnLink="/add-new-listing"
-                btnText="Add Listing"
+                btnLink="/contact"
+                btnText="Contact Us"
                 spanClass="icon-right text-gradient" 
                 showHeaderBtn={true}
                 showOffCanvasBtn={false}
                 offCanvasBtnClass=""
                 showContactNumber={false}
             />
+            
+            {/* Mobile Menu */}
+            <MobileMenu />
+            
+            {/* Off Canvas */}
+            <OffCanvas />
 
             {/* BreadCrumb */}
             <Breadcrumb 
@@ -71,6 +80,9 @@ const BlogDetails = () => {
 
             {/* Cta */}
             <Cta ctaClass=""/>
+
+            {/* Services */}
+            <Service/>
 
             {/* Footer */}
             <Footer/>

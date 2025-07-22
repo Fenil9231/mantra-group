@@ -67,7 +67,7 @@ const createSlugURL = (url, slug) => {
 
 // Get site URL from environment
 const getSiteUrl = () => {
-  return process.env.VITE_SITE_URL || process.env.SITE_URL || 'https://your-domain.com';
+  return process.env.VITE_SITE_URL || process.env.SITE_URL || 'https://mantragroup.ca';
 };
 
 // Generate dynamic property URLs

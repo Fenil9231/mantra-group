@@ -1,6 +1,6 @@
 import React from 'react';
 import FooterBottom from './FooterBottom';
-import FooterServiceItem from './footer/FooterServiceItem';
+import FooterContactItem from './footer/FooterContactItem';
 import FooterLogoDesc from './footer/FooterLogoDesc';
 import FooterInfo from './footer/FooterInfo';
 import SocialList from './SocialList';
@@ -26,7 +26,7 @@ const FooterTwo = () => {
                         </div>
                         <div className="col-xl-1 d-xl-block d-none"></div>
                         <div className="col-xl-3 col-sm-6">
-                            <FooterServiceItem/>
+                            <FooterContactItem/>
                         </div>
                         <div className="col-xl-1 d-xl-block d-none"></div>
                         <div className="col-xl-3 col-sm-6">

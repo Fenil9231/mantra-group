@@ -2632,7 +2632,7 @@ input[type=number] {
     margin-right: auto;
 }
 
-.section-heading.style-dark .section-heading__subtitle, .section-heading.style-dark .banner-video__subtitle {
+.section-heading.style-dark .section-heading__subtitle {
     background-color: var(--gray-700);
 }
 
@@ -2662,7 +2662,7 @@ input[type=number] {
     }
 }
 
-.section-heading__subtitle, .banner-video__subtitle {
+.section-heading__subtitle {
     padding: 5px 10px;
     border-radius: 3px;
     background-color: hsl(var(--white));
@@ -5187,97 +5187,7 @@ button.slick-next {
     }
 }
 /* ======================= Property Section Css End ================================== */
-/* ======================== Video popup Section Css Start =================== */
-.video-popup {
-    background-color: hsl(var(--white));
-    position: relative;
-    z-index: 1;
-}
-
-.video-popup::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 50%;
-    bottom: 0;
-    left: 0;
-    background-color: hsl(var(--body-bg));
-    z-index: -1;
-}
-
-.video-popup__thumb {
-    position: relative;
-    min-height: 220px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.video-popup__thumb img {
-    min-height: inherit;
-}
-
-.video-popup__thumb span {
-    display: none;
-}
-
-.video-popup__button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--main-gradient);
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: hsl(var(--white)) !important;
-    font-size: 26px;
-    border-radius: 50%;
-    transition: 0.2s linear;
-}
-
-.video-popup__button.style-two {
-    background: var(--gray-900);
-}
-
-.video-popup__button.style-two:before {
-    background: var(--gray-900);
-}
-
-.video-popup__button:hover {
-    transform: translate(-50%, -50%) scale(1.05);
-}
-
-.video-popup__button:before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-    width: inherit;
-    height: inherit;
-    background: inherit;
-    border-radius: 50%;
-    -webkit-animation: pulse-border 1500ms ease-out infinite;
-    animation: pulse-border 1500ms ease-out infinite;
-    z-index: -1;
-}
-
-@keyframes pulse-border {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translate(-50%, -50%) scale(1.5);
-        opacity: 0;
-    }
-}
-/* ======================== Video popup Section Css End =================== */
+/* ======================== Video popup Section Css Removed =================== */
 /* ============================= Counter Section Css Start ======================= */
 .counter-item {
     text-align: center;
@@ -5679,7 +5589,7 @@ button.slick-next {
     color: hsl(var(--white));
 }
 
-.dark-background .section-heading__subtitle, .dark-background .banner-video__subtitle {
+.dark-background .section-heading__subtitle {
     background-color: var(--gray-700) !important;
 }
 
@@ -7410,55 +7320,7 @@ button.slick-next {
     }
 }
 /* ======================= Counter Section Css End ======================= */
-/* =========================== Banner Six Css Start =============================== */
-.banner-video {
-    padding: 140px 0;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.banner-video::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background-color: hsl(var(--black)/0.7);
-}
-
-.banner-video__video {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-    object-fit: cover;
-}
-
-.banner-video__subtitle {
-    background-color: hsl(var(--white)/0.15) !important;
-}
-
-.banner-video__title {
-    margin-top: 8px;
-    margin-bottom: 32px;
-}
-
-.banner-video__desc {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 20px !important;
-    font-weight: 300;
-}
-
-/* =========================== Banner Six Css End =============================== */
+/* =========================== Banner Six Css Removed =============================== */
 /* ======================== Banner Seven Start ============================== */
 .banner-seven {
     position: relative;

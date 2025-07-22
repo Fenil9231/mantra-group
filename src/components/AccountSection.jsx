@@ -11,7 +11,7 @@ import AccountFavoritePropertyTab from './AccountFavoritePropertyTab';
 import AccountAddPropertyTab from './AccountAddPropertyTab';
 import AccountPaymentTab from './AccountPaymentTab';
 import AccountChangePasswordTab from './AccountChangePasswordTab';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 const AccountSection = () => {
 
@@ -32,7 +32,6 @@ const AccountSection = () => {
 
     return (
         <>
-            <ToastContainer />
             <section className="account padding-y-120">
                 <div className="container container-two">
                     <Tabs>

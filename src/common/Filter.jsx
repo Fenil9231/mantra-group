@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useFormik } from "formik";
 import * as yup from "yup";
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 import { useNavigate } from 'react-router-dom';
 import { PropertyFilterContext } from '../contextApi/PropertyFilterContext';
@@ -41,8 +41,7 @@ const Filter = (props) => {
     // Input Field Validation End
     
     return (
-        <>  
-        <ToastContainer/>
+        <>
             <div className="filter">
                 <form action="#" onSubmit={formik.handleSubmit}>
                     <div className="row gy-sm-4 gy-3">

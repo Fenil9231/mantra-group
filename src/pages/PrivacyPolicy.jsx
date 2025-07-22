@@ -3,6 +3,7 @@ import Header from '../common/Header';
 import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
 import PageTitle from '../common/PageTitle';
+import Service from '../components/Service';
 
 const PrivacyPolicy = () => {
     return (
@@ -16,8 +17,8 @@ const PrivacyPolicy = () => {
                 logoWhite={true}
                 headerMenusClass="mx-auto"
                 btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
-                btnLink="/add-new-listing"
-                btnText="Add Listing"
+                btnLink="/contact"
+                btnText="Contact Us"
                 spanClass="icon-right text-gradient" 
                 showHeaderBtn={true}
                 showOffCanvasBtn={false}
@@ -179,9 +180,11 @@ const PrivacyPolicy = () => {
                                     </p>
                                     <div className="contact-info">
                                         <p><strong>Mantra Group</strong></p>
-                                        <p>Email: <a href={`mailto:${import.meta.env.VITE_CONTACT_EMAIL || 'privacy@mantra-group.com'}`}>{import.meta.env.VITE_CONTACT_EMAIL || 'privacy@mantra-group.com'}</a></p>
-                                        <p>Phone: <a href={`tel:${import.meta.env.VITE_CONTACT_PHONE || '+1 647-560-0736'}`}>{import.meta.env.VITE_CONTACT_PHONE || '+1 647-560-0736'}</a></p>
-                                        <p>Address: {import.meta.env.VITE_BUSINESS_ADDRESS || '4040 Steeles Ave W, Woodbridge, ON L4L 4Y5'}</p>
+                                        <p><strong>Website:</strong> <a href="https://mantragroup.ca" target="_blank" rel="noopener noreferrer">https://mantragroup.ca</a></p>
+                                        <p><strong>Email:</strong> <a href="mailto:contact@mantragrp.com">contact@mantragrp.com</a></p>
+                                        <p><strong>Phone:</strong> <a href="tel:+16475600736">+1 647-560-0736</a></p>
+                                        <p><strong>Address:</strong> 4040 Steeles Ave W, Woodbridge, ON L4L 4Y5</p>
+                                        <p><strong>Business Hours:</strong> Mon-Fri: 9:00 AM - 6:00 PM, Sat: 10:00 AM - 4:00 PM</p>
                                     </div>
                                 </div>
 
@@ -191,6 +194,9 @@ const PrivacyPolicy = () => {
                     </div>
                 </div>
             </section>
+
+            {/* Services Section */}
+            <Service />
 
             {/* Footer */}
             <Footer/>

@@ -9,6 +9,9 @@ import Cta from '../components/Cta';
 import Counter from '../components/Counter';
 import Testimonial from '../components/Testimonial';
 import PropertyTypeThree from '../components/PropertyTypeThree';
+import Service from '../components/Service';
+import MobileMenu from '../common/MobileMenu';
+import OffCanvas from '../common/OffCanvas';
 
 const serviceDetails = {
     'property-management': {
@@ -643,8 +646,8 @@ const ServiceDetail = () => {
                     logoWhite={true}
                     headerMenusClass="mx-auto"
                     btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
-                    btnLink="/add-new-listing"
-                    btnText="Add Listing"
+                btnLink="/contact"
+                btnText="Contact Us"
                     spanClass="icon-right text-gradient" 
                     showHeaderBtn={true}
                     showOffCanvasBtn={false}
@@ -700,13 +703,19 @@ const ServiceDetail = () => {
                 logoWhite={true}
                 headerMenusClass="mx-auto"
                 btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
-                btnLink="/add-new-listing"
-                btnText="Add Listing"
+                btnLink="/contact"
+                btnText="Contact Us"
                 spanClass="icon-right text-gradient" 
                 showHeaderBtn={true}
                 showOffCanvasBtn={false}
                 showContactNumber={false}
             />
+            
+            {/* Mobile Menu */}
+            <MobileMenu />
+            
+            {/* Off Canvas */}
+            <OffCanvas />
 
             {/* Breadcrumb */}
             <Breadcrumb 
@@ -833,7 +842,6 @@ const ServiceDetail = () => {
                                 <p className="mb-4">Contact us today for a free consultation and discover how our {service.title.toLowerCase()} can benefit you.</p>
                                 <div className="d-flex justify-content-center gap-3">
                                     <a href="/contact" className="btn btn-main">Get Free Consultation</a>
-                                    <a href="tel:+1234567890" className="btn btn-outline-main">Call Now</a>
                                 </div>
                             </div>
                         </div>
@@ -849,6 +857,9 @@ const ServiceDetail = () => {
 
             {/* Property Types Section */}
             <PropertyTypeThree />
+
+            {/* Service Section */}
+            <Service />
 
             {/* CTA */}
             <Cta ctaClass="" />

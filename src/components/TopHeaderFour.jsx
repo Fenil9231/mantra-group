@@ -14,7 +14,7 @@ const TopHeaderFour = () => {
                     <div className="header-info flx-align">
                         <div className="header-info__item flx-align">
                             <span className="header-info__icon text-gradient"><i className="fas fa-phone"></i></span>
-                            <a href="tel:" className="header-info__text text-body">(629) 555-0129</a>
+                            <a href="tel:" className="header-info__text text-body">+1 647-560-0736</a>
                         </div>
                         <div className="header-info__item flx-align">
                             <span className="header-info__icon text-gradient"><i className="fas fa-envelope"></i></span>

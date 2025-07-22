@@ -47,7 +47,7 @@ const TestimonialThree = () => {
                         </div>
 
                         <div className="col-lg-7">
-                            <div className="testimonials-three__wrapper overflow-hidden">
+                            <div className="testimonials-three__wrapper overflow-visible">
                                 <Slider {...settings} ref={slider}>
                                     {
                                         testimonials.map((testimonialThreeItem, testimonialThreeItemIndex) => {

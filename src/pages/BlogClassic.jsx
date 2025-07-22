@@ -4,6 +4,7 @@ import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
 import Cta from '../components/Cta';
 import BlogClassicSection from '../components/BlogClassicSection';
+import Service from '../components/Service';
 import PageTitle from '../common/PageTitle';
 
 const BlogClassic = () => {
@@ -18,8 +19,8 @@ const BlogClassic = () => {
                 logoWhite={true}
                 headerMenusClass="mx-auto"
                 btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
-                btnLink="/add-new-listing"
-                btnText="Add Listing"
+                btnLink="/contact"
+                btnText="Contact Us"
                 spanClass="icon-right text-gradient" 
                 showHeaderBtn={true}
                 showOffCanvasBtn={false}
@@ -37,6 +38,9 @@ const BlogClassic = () => {
 
             {/* Cta */}
             <Cta ctaClass=""/>
+
+            {/* Services */}
+            <Service/>
 
             {/* Footer */}
             <Footer/>

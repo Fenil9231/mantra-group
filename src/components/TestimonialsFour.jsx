@@ -49,54 +49,60 @@ const TestimonialsFour = () => {
                 buttonText="View More"
             />
             
-            <div className="testimonial-four-slider overflow-hidden" ref={slider}>
-                <Slider {...settings}  ref={slider}>
+            <div className="testimonial-four-slider overflow-visible position-relative">
+                <Slider {...settings} ref={slider}>
                     <div className="testimonial-item style-two style-four">
-                        <p className="testimonial-item__desc mt-0">Real estate is a lucrativ ind involves the buying selling and Real estate a is a lucrative indinvolves buyingrep pertiesen cos residentialreproperties. It encompasses residential  Real estate a is a lucrative</p>
+                        <p className="testimonial-item__desc mt-0">Working with this team was exceptional. They helped us find the perfect investment property in downtown Toronto. Their market knowledge and professional guidance made the entire process smooth and profitable.</p>
                         <div className="testimonial-item__top flx-between gap-2">
                             <div className="testimonial-item__info d-flex align-items-center">
                                 <div className="testimonial-item__thumb">
                                     <img src="assets/images/thumbs/user-img1.png" alt=""/>
                                 </div>
                                 <div>
-                                    <h6 className="testimonial-item__name">Robert Fox</h6>
-                                <span className="testimonial-item__designation text-gradient">Prime Investments</span>
+                                    <h6 className="testimonial-item__name">Robert Chen</h6>
+                                <span className="testimonial-item__designation text-gradient">Property Investor</span>
                                 </div>
                             </div>
                             <span className="testimonial-item__quote"><i className="fas fa-quote-right"></i></span>
                         </div>
                     </div>
                     <div className="testimonial-item style-two style-four">
-                        <p className="testimonial-item__desc mt-0">Real estate is a lucrativ ind involves the buying selling and Real estate a is a lucrative indinvolves buyingrep pertiesen cos residentialreproperties. It encompasses residential  Real estate a is a lucrative</p>
+                        <p className="testimonial-item__desc mt-0">As first-time homebuyers, we were nervous about the process. The team guided us every step of the way, from pre-approval to closing. We found our dream home in Mississauga within our budget!</p>
                         <div className="testimonial-item__top flx-between gap-2">
                             <div className="testimonial-item__info d-flex align-items-center">
                                 <div className="testimonial-item__thumb">
                                     <img src="assets/images/thumbs/user-img2.png" alt=""/>
                                 </div>
                                 <div>
-                                    <h6 className="testimonial-item__name">John Doe</h6>
-                                <span className="testimonial-item__designation text-gradient">Web Developer</span>
+                                    <h6 className="testimonial-item__name">Sarah Johnson</h6>
+                                <span className="testimonial-item__designation text-gradient">First-Time Homebuyer</span>
                                 </div>
                             </div>
                             <span className="testimonial-item__quote"><i className="fas fa-quote-right"></i></span>
                         </div>
                     </div>
                     <div className="testimonial-item style-two style-four">
-                        <p className="testimonial-item__desc mt-0">Real estate is a lucrativ ind involves the buying selling and Real estate a is a lucrative indinvolves buyingrep pertiesen cos residentialreproperties. It encompasses residential  Real estate a is a lucrative</p>
+                        <p className="testimonial-item__desc mt-0">Their commercial real estate expertise helped us secure an excellent office space for our growing business. The negotiation skills and market insights were invaluable. Highly recommend their services!</p>
                         <div className="testimonial-item__top flx-between gap-2">
                             <div className="testimonial-item__info d-flex align-items-center">
                                 <div className="testimonial-item__thumb">
                                     <img src="assets/images/thumbs/user-img3.png" alt=""/>
                                 </div>
                                 <div>
-                                    <h6 className="testimonial-item__name">Donald Trump</h6>
-                                <span className="testimonial-item__designation text-gradient">Business Man</span>
+                                    <h6 className="testimonial-item__name">Michael Rodriguez</h6>
+                                <span className="testimonial-item__designation text-gradient">Business Owner</span>
                                 </div>
                             </div>
                             <span className="testimonial-item__quote"><i className="fas fa-quote-right"></i></span>
                         </div>
                     </div>
                 </Slider>
+                <button className='slick-arrow slick-prev' onClick={() => slider?.current?.slickPrev()}> 
+                    <i className="fas fa-arrow-left"></i> 
+                </button>
+                <button className='slick-arrow slick-next' onClick={() => slider?.current?.slickNext()}> 
+                    <i className="fas fa-arrow-right"></i> 
+                </button>
             </div>
         </div>
     </section>

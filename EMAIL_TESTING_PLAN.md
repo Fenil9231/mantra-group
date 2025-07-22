@@ -1,7 +1,7 @@
 # Email Functionality Testing Plan
 
 ## Overview
-This document outlines the comprehensive testing plan for all email forms on the Cityscape Real Estate website after migrating from EmailJS to Nodemailer-based serverless API.
+This document outlines the comprehensive testing plan for all email forms on the Mantra Group website after migrating from EmailJS to Nodemailer-based serverless API.
 
 ## Forms to Test
 

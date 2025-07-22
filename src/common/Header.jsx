@@ -60,7 +60,7 @@ const Header = (props) => {
                                 props.showContactNumber && (
                                     <Link to="#" className="contact-number text-poppins text-gray-800 fw-500 d-flex align-items-center gap-2">
                                         <span className="icon text-gradient font-20"><i className="fas fa-phone"></i></span>
-                                        <span className="text">(629) 555-0129</span>
+                                        <span className="text">+1 647-560-0736</span>
                                     </Link>
                                 )
                             }

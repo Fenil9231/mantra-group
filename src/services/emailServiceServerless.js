@@ -44,6 +44,23 @@ class ServerlessEmailService {
         return emailRegex.test(email);
     }
 
+    // Validate phone number format
+    static validatePhone(phone) {
+        // Remove all non-digit characters for validation
+        const cleanPhone = phone.replace(/\D/g, '');
+        
+        // Check if it's a valid length (7-15 digits)
+        // This covers most international phone number formats
+        if (cleanPhone.length < 7 || cleanPhone.length > 15) {
+            return false;
+        }
+        
+        // Basic phone number regex that accepts various formats:
+        // +1-234-567-8900, (234) 567-8900, 234.567.8900, 234-567-8900, 2345678900
+        const phoneRegex = /^[\+]?[1-9][\d\s\-\(\)\.]{6,20}$/;
+        return phoneRegex.test(phone.trim());
+    }
+
     // Generic API call method
     static async callEmailAPI(type, data) {
         try {
@@ -63,15 +80,38 @@ class ServerlessEmailService {
                 })
             });
 
-            const result = await response.json();
+            // Check if response has content before parsing JSON
+            let result = {};
+            const contentType = response.headers.get('content-type');
+            
+            if (contentType && contentType.includes('application/json')) {
+                const text = await response.text();
+                if (text.trim()) {
+                    try {
+                        result = JSON.parse(text);
+                    } catch (parseError) {
+                        console.warn('Failed to parse JSON response:', parseError);
+                        result = { message: 'Response received but could not parse JSON' };
+                    }
+                } else {
+                    result = { message: 'Empty response received' };
+                }
+            } else {
+                // Non-JSON response, treat as success if status is ok
+                result = { message: 'Request processed successfully' };
+            }
 
             if (!response.ok) {
-                throw new Error(result.error || `HTTP error! status: ${response.status}`);
+                throw new Error(result.error || result.message || `HTTP error! status: ${response.status}`);
             }
 
             return result;
         } catch (error) {
             console.error('Email API Error:', error);
+            // If it's a network error or fetch error, provide a more user-friendly message
+            if (error.name === 'TypeError' && error.message.includes('fetch')) {
+                throw new Error('Unable to connect to email service. Please check your internet connection and try again.');
+            }
             throw error;
         }
     }
@@ -95,7 +135,9 @@ class ServerlessEmailService {
                 email: formData.email,
                 phone: formData.phone || '',
                 subject: formData.subject || 'Contact Form Submission',
-                message: formData.message
+                message: formData.message,
+                smsConsent: formData.smsConsent || false,
+                marketingConsent: formData.marketingConsent || false
             });
 
             // Show success toast

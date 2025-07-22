@@ -4,6 +4,7 @@ import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
 import Cta from '../components/Cta';
 import ProjectDetailsSection from '../components/ProjectDetailsSection';
+import Service from '../components/Service';
 import { useParams } from 'react-router-dom';
 import PageTitle from '../common/PageTitle';
 
@@ -24,8 +25,8 @@ const ProjectDetails = () => {
                 logoWhite={true}
                 headerMenusClass="mx-auto"
                 btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
-                btnLink="/add-new-listing"
-                btnText="Add Listing"
+                btnLink="/contact"
+                btnText="Contact Us"
                 spanClass="icon-right text-gradient" 
                 showHeaderBtn={true}
                 showOffCanvasBtn={false}
@@ -41,6 +42,9 @@ const ProjectDetails = () => {
 
             {/* Project Details Section */}
             <ProjectDetailsSection/>
+
+            {/* Service Section */}
+            <Service />
 
             {/* Cta */}
             <Cta ctaClass=""/>

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useFormik } from "formik";
 import * as yup from "yup";
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
 const FilterFour = () => {
@@ -36,8 +36,7 @@ const FilterFour = () => {
     // Input Field Validation End
     
     return (
-        <>  
-            <ToastContainer/>
+        <>
             <form action="#" onSubmit={formik.handleSubmit} className="search-keyword position-relative">
                 <div className="position-relative">
                     <input 

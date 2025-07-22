@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 import ServerlessEmailService from '../services/emailServiceServerless';
 import { useSitemapUpdate } from '../hooks/useSitemapUpdate';
 
@@ -72,7 +72,6 @@ const NewsletterForm = (props) => {
     
     return (
         <>
-            <ToastContainer/>
             <form action="#" onSubmit={handleSubmit} className={`newsletter-content__form  d-flex align-items-start gap-2 ${props.formClass}`}>
                 <div className="w-100">
                     <div className="position-relative w-100">

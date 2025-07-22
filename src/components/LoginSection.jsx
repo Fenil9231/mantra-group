@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useFormik } from "formik";
 import * as yup from "yup";
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 import LoginRegisterThumb from '../../public/assets/images/thumbs/login-img.avif';
 
@@ -67,7 +67,6 @@ const LoginSection = () => {
 
     return (
         <>
-        <ToastContainer/>
             <section className="loginRegister padding-y-120">
                 <div className="container container-two">
                     <div className="loginRegister-box card common-card">
