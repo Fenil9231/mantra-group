@@ -4,6 +4,7 @@ import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
 import Cta from '../components/Cta';
 import CheckoutSection from '../components/CheckoutSection';
+import Service from '../components/Service';
 import PageTitle from '../common/PageTitle';
 
 const Checkout = () => {
@@ -18,8 +19,8 @@ const Checkout = () => {
                 logoWhite={true}
                 headerMenusClass="mx-auto"
                 btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
-                btnLink="/add-new-listing"
-                btnText="Add Listing"
+                btnLink="/contact"
+                btnText="Contact Us"
                 spanClass="icon-right text-gradient" 
                 showHeaderBtn={true}
                 showOffCanvasBtn={false}
@@ -35,6 +36,9 @@ const Checkout = () => {
             
             {/* Checkout Section */}
             <CheckoutSection/>
+
+            {/* Service Section */}
+            <Service />
 
             {/* Cta */}
             <Cta ctaClass=""/>

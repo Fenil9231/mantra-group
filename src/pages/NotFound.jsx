@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import Button from '../common/Button';
 import { useNavigate } from 'react-router-dom';
 import SEOHead from '../components/SEOHead';
+import Service from '../components/Service';
+import Footer from '../common/Footer';
 
 const NotFound = () => {
 
@@ -40,6 +42,12 @@ const NotFound = () => {
                     />
                 </div>
             </div>
+
+            {/* Service Section */}
+            <Service />
+
+            {/* Footer */}
+            <Footer />
         </>
     );
 };

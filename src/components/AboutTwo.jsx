@@ -50,9 +50,9 @@ const AboutTwo = () => {
                                     </ul>
                                     <div className="about-two__button">
                                         <Button
-                                            btnLink="/about-us" 
+                                            btnLink="/contact" 
                                             btnClass="btn-main" 
-                                            btnText="Add Listing" 
+                                            btnText="Contact Us" 
                                             spanClass="icon-right icon" 
                                             iconClass="fas fa-arrow-right" 
                                         />

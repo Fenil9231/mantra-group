@@ -6,7 +6,10 @@ import Cta from '../components/Cta';
 import AboutThree from '../components/AboutThree';
 import PropertyTypeThree from '../components/PropertyTypeThree';
 import Team from '../components/Team';
+import Service from '../components/Service';
 import PageTitle from '../common/PageTitle';
+import MobileMenu from '../common/MobileMenu';
+import OffCanvas from '../common/OffCanvas';
 
 const AboutUs = () => {
     return (
@@ -19,14 +22,17 @@ const AboutUs = () => {
                 logoWhite={true}
                 headerMenusClass="mx-auto"
                 btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
-                btnLink="/add-new-listing"
-                btnText="Add Listing"
+                btnLink="/contact"
+                btnText="Contact Us"
                 spanClass="icon-right text-gradient" 
                 showHeaderBtn={true}
                 showOffCanvasBtn={false}
                 offCanvasBtnClass=""
                 showContactNumber={false}
             />
+
+            <MobileMenu />
+            <OffCanvas />
 
             {/* BreadCrumb */}
             <Breadcrumb 
@@ -42,6 +48,9 @@ const AboutUs = () => {
 
             {/* Cta */}
             <Cta ctaClass=""/>
+
+            {/* Services */}
+            <Service/>
 
             {/* Footer */}
             <Footer/>

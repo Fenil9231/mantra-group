@@ -3,10 +3,10 @@ import React from 'react';
 // Banner One
 import BannerImg from '../../../public/assets/images/thumbs/banner-img.png'; 
 export const bannerContent = {
-    subtitle: 'Toronto Real Estate Experts',
-    title: 'Find Your Perfect ',
-    gradientTitle: 'Home In Toronto ',
-    desc: 'Discover premium properties in Toronto\'s most desirable neighborhoods. From downtown condos to suburban family homes, we help you find your dream property in Canada\'s largest city.',
+    subtitle: 'Premier Real Estate Services',
+    title: 'Your Dream Property ',
+    gradientTitle: 'Awaits You ',
+    desc: 'Experience excellence in real estate with Mantra Group. We provide comprehensive property solutions including buying, selling, leasing, and investment opportunities across Toronto and the Greater Toronto Area. Let our expertise guide you to your perfect property.',
     thumb: BannerImg
 }
 
@@ -27,15 +27,15 @@ export const filterTabs = [
 export const aboutStatistics = {
     icon: <i className="fas fa-users text-gradient"></i>,
     number: '2500+',
-    text: 'Happy Toronto Families'
+    text: 'Satisfied Clients'
 }
 import aboutContentThumb from '../../../public/assets/images/thumbs/about-img.png'; 
 import aboutContentIcon from '../../../public/assets/images/icons/about-icon.svg'; 
 export const aboutContent = {
     thumb: aboutContentThumb,
     icon: aboutContentIcon,
-    title: 'Toronto Real Estate Excellence',
-    desc: 'With over 15 years of experience in Toronto\'s dynamic real estate market, we specialize in helping families find their perfect home in the GTA. From luxury condos in King West to family homes in North York, we know Toronto inside and out.'
+    title: 'Your Trusted Real Estate Partner',
+    desc: 'At Mantra Group, we bring decades of combined experience in Toronto\'s real estate market. Our commitment to excellence, personalized service, and deep market knowledge ensures that whether you\'re buying, selling, or investing, you receive expert guidance every step of the way. We specialize in residential and commercial properties across the GTA, helping clients achieve their real estate goals with confidence and success.'
 }
 
 
@@ -61,7 +61,7 @@ export const properties = [
         title: 'Modern Condo in King West Village',
         desc: 'Stunning 2-bedroom condo in Toronto\'s vibrant King West district. Features floor-to-ceiling windows, premium finishes, and access to world-class amenities. Walking distance to Union Station, Entertainment District, and top restaurants.',
         locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '123 King Street West, Toronto, ON',
+        location: '4040 Steeles Ave W, Woodbridge, ON L4L 4Y5',
         amenities: [
             {
                 icon: <i className="fas fa-bed"></i>,
@@ -106,10 +106,10 @@ export const properties = [
     {
         id: 4,
         thumb: propertyThumb4,
-        price: '$600.00',
-        day: '/per day',
-        title: 'Home is Where Your Story Begins ',
-        desc: 'Real Estate is a vast industry that deals with the buying and selling of properties. It involves transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
+        price: '$2,100,000',
+        day: '',
+        title: 'Executive Townhouse in Yorkville',
+        desc: 'Sophisticated 5-bedroom executive townhouse in Toronto\'s prestigious Yorkville district. Features designer finishes, gourmet kitchen, rooftop terrace, and private garage. Steps from luxury shopping, fine dining, and cultural attractions.',
         locationIcon: <i className="fas fa-map-marker-alt"></i>,
         location: '123 Queen Street West, Toronto, ON',
         amenities: [
@@ -122,7 +122,7 @@ export const properties = [
                 text: ' 4 Baths ',
             }
         ],
-        btnText: 'Book Now',
+        btnText: 'View Details',
         dataSort: 'Low Price',
         dataStatuses: 'Sell',
         dataTypes: 'Villa',
@@ -131,10 +131,10 @@ export const properties = [
     {
         id: 5,
         thumb: propertyThumb5,
-        price: '$650.00',
-        day: '/per day',
-        title: 'Building Trust, One Home at a Time',
-        desc: 'Real Estate is a vast industry that deals with the buying and selling of properties. It involves transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
+        price: '$3,250,000',
+        day: '',
+        title: 'Luxury Estate in Forest Hill',
+        desc: 'Magnificent 6-bedroom luxury estate in Toronto\'s exclusive Forest Hill neighborhood. Features grand foyer, chef\'s kitchen, wine cellar, home theater, and beautifully landscaped grounds. Perfect for entertaining and family living.',
         locationIcon: <i className="fas fa-map-marker-alt"></i>,
         location: '321 King Street East, Toronto, ON',
         amenities: [
@@ -156,20 +156,20 @@ export const properties = [
     {
         id: 7,
         thumb: propertyThumb7,
-        price: '$350.00',
-        day: '/per day',
-        title: 'Guiding You Home with Experience',
-        desc: 'Real Estate is a vast industry that deals with the buying and selling of properties. It involves transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
+        price: '$4,500,000',
+        day: '',
+        title: 'Premium Commercial Office Space',
+        desc: 'Prime commercial office space in downtown Toronto\'s financial district. Features modern amenities, floor-to-ceiling windows, executive boardrooms, and premium location with excellent transit access. Perfect for growing businesses.',
         locationIcon: <i className="fas fa-map-marker-alt"></i>,
         location: '777 Dundas Street West, Toronto, ON',
         amenities: [
             {
-                icon: <i className="fas fa-bed"></i>,
-                text: '7 Beds',
+                icon: <i className="fas fa-building"></i>,
+                text: '15,000 sq ft',
             },
             {
-                icon: <i className="fas fa-bath"></i>,
-                text: ' 3 Baths ',
+                icon: <i className="fas fa-car"></i>,
+                text: ' 50 Parking ',
             }
         ],
         btnText: 'View Details',
@@ -181,16 +181,16 @@ export const properties = [
     {
         id: 8,
         thumb: propertyThumb8,
-        price: '$530.00',
-        day: '/per day',
-        title: 'A Tradition of Trust in Real Estate ',
-        desc: 'Real Estate is a vast industry that deals with the buying and selling of properties. It involves transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
+        price: '$1,850,000',
+        day: '',
+        title: 'Penthouse Suite in Midtown',
+        desc: 'Stunning penthouse suite in prestigious Midtown Toronto. Features panoramic city views, private terrace, premium finishes, and concierge services. Located near Yonge-Eglinton with excellent transit and amenities.',
         locationIcon: <i className="fas fa-map-marker-alt"></i>,
         location: '888 Yonge Street, Toronto, ON',
         amenities: [
             {
                 icon: <i className="fas fa-bed"></i>,
-                text: '7 Beds',
+                text: '3 Beds',
             },
             {
                 icon: <i className="fas fa-bath"></i>,
@@ -206,20 +206,20 @@ export const properties = [
     {
         id: 10,
         thumb: propertyThumb10,
-        price: '$680.00',
-        day: '/per day',
-        title: 'Making House Hunting an Adventure ',
-        desc: 'Real Estate is a vast industry that deals with the buying and selling of properties. It involves transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
+        price: '$950,000',
+        day: '',
+        title: 'Modern Loft in Entertainment District',
+        desc: 'Stylish converted loft in Toronto\'s vibrant Entertainment District. Features exposed brick, high ceilings, industrial finishes, and rooftop access. Walking distance to Rogers Centre, CN Tower, and waterfront.',
         locationIcon: <i className="fas fa-map-marker-alt"></i>,
         location: '111 College Street, Toronto, ON',
         amenities: [
             {
                 icon: <i className="fas fa-bed"></i>,
-                text: '7 Beds',
+                text: '2 Beds',
             },
             {
                 icon: <i className="fas fa-bath"></i>,
-                text: ' 3 Baths ',
+                text: ' 2 Baths ',
             }
         ],
         btnText: 'View Details',
@@ -231,20 +231,20 @@ export const properties = [
     {
         id: 11,
         thumb: propertyThumb11,
-        price: '$580.00',
-        day: '/per day',
-        title: 'Opening New Doors to Your Future ',
-        desc: 'Real Estate is a vast industry that deals with the buying and selling of properties. It involves transactions related to residential, commercial, and industrial properties. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam',
+        price: '$2,800,000',
+        day: '',
+        title: 'Executive Office Building in Financial District',
+        desc: 'Premium office building in Toronto\'s Financial District. Features modern infrastructure, high-speed elevators, executive suites, and prime location near major banks and corporate headquarters. Excellent investment opportunity.',
         locationIcon: <i className="fas fa-map-marker-alt"></i>,
         location: '222 Spadina Avenue, Toronto, ON',
         amenities: [
             {
-                icon: <i className="fas fa-bed"></i>,
-                text: '7 Beds',
+                icon: <i className="fas fa-building"></i>,
+                text: '25,000 sq ft',
             },
             {
-                icon: <i className="fas fa-bath"></i>,
-                text: ' 3 Baths ',
+                icon: <i className="fas fa-car"></i>,
+                text: ' 100 Parking ',
             }
         ],
         btnText: 'View Details',
@@ -263,18 +263,18 @@ import propertyTypeIcon3 from '../../../public/assets/images/icons/property-type
 export const propertyTypes = [ 
     {
         icon: propertyTypeIcon1,
-        title: 'Toronto Condo Specialists',
-        desc: 'Expert guidance for buying and selling condos in Toronto\'s hottest neighborhoods including King West, Entertainment District, and Yorkville.'
+        title: 'Residential Properties',
+        desc: 'Comprehensive residential real estate services including condos, townhomes, and detached houses. We help families find their perfect home with expert market knowledge and personalized service.'
     },
     {
         icon: propertyTypeIcon2,
-        title: 'GTA Family Homes',
-        desc: 'Find the perfect family home in Mississauga, Markham, Richmond Hill, and other top GTA communities with excellent schools and amenities.'
+        title: 'Commercial Real Estate',
+        desc: 'Professional commercial property services for office spaces, retail locations, and industrial properties. Strategic guidance for businesses looking to expand or relocate.'
     },
     {
         icon: propertyTypeIcon3,
-        title: 'Investment Properties',
-        desc: 'Maximize your ROI with our expertise in Toronto\'s real estate market. We help investors find high-yield properties in prime locations for resale and appreciation.'
+        title: 'Investment Opportunities',
+        desc: 'Expert investment property analysis and portfolio management. We identify high-potential properties and provide comprehensive market insights to maximize your real estate investments.'
     },
 ]
 

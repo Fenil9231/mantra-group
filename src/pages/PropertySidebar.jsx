@@ -4,12 +4,17 @@ import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
 import Cta from '../components/Cta';
 import PropertySidebarSection from '../components/PropertySidebarSection';
+import Service from '../components/Service';
 import PageTitle from '../common/PageTitle';
+import MobileMenu from '../common/MobileMenu';
+import OffCanvas from '../common/OffCanvas';
 
 const Property = () => {
     return (
         <>
         <PageTitle title="Mantra Group - Property With Sidebar" />
+        <MobileMenu />
+        <OffCanvas />
 
         <main className="body-bg">
             
@@ -20,8 +25,8 @@ const Property = () => {
                 logoWhite={true}
                 headerMenusClass="mx-auto"
                 btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
-                btnLink="/add-new-listing"
-                btnText="Add Listing"
+                btnLink="/contact"
+                btnText="Contact Us"
                 spanClass="icon-right text-gradient" 
                 showHeaderBtn={true}
                 showOffCanvasBtn={false}
@@ -37,6 +42,9 @@ const Property = () => {
 
             {/* Property Sidebar Section */}
             <PropertySidebarSection/>
+
+            {/* Service Section */}
+            <Service />
 
             {/* Cta */}
             <Cta ctaClass=""/>

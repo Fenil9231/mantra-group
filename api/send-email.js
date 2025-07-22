@@ -27,7 +27,7 @@ const createTransporter = () => {
     };
   }
   
-  return nodemailer.createTransporter({
+  return nodemailer.createTransport({
     host: process.env.SMTP_HOST || 'smtp.gmail.com',
     port: parseInt(process.env.SMTP_PORT) || 587,
     secure: false, // true for 465, false for other ports
@@ -38,16 +38,136 @@ const createTransporter = () => {
   });
 };
 
-// Email templates
+// Enhanced Email templates with modern UI/UX design
 const getEmailTemplate = (type, data) => {
   const baseStyle = `
     <style>
-      body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-      .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-      .header { background-color: #f8f9fa; padding: 20px; text-align: center; }
-      .content { padding: 20px; background-color: #ffffff; }
-      .footer { background-color: #f8f9fa; padding: 15px; text-align: center; font-size: 12px; }
-      .button { display: inline-block; padding: 12px 24px; background-color: #007bff; color: white; text-decoration: none; border-radius: 4px; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        line-height: 1.6; 
+        color: #333333; 
+        background-color: #f8fafc;
+      }
+      .email-wrapper { 
+        max-width: 600px; 
+        margin: 0 auto; 
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .header { 
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 30px 20px; 
+        text-align: center; 
+        color: white;
+      }
+      .header h1 { 
+        font-size: 24px; 
+        font-weight: 600; 
+        margin-bottom: 8px;
+      }
+      .header p { 
+        font-size: 14px; 
+        opacity: 0.9;
+      }
+      .content { 
+        padding: 30px 20px; 
+        background-color: #ffffff; 
+      }
+      .content h2 { 
+        color: #2d3748; 
+        font-size: 20px; 
+        margin-bottom: 16px;
+      }
+      .content p { 
+        margin-bottom: 12px; 
+        color: #4a5568;
+      }
+      .info-box { 
+        background-color: #f7fafc; 
+        border-left: 4px solid #667eea; 
+        padding: 16px; 
+        margin: 20px 0; 
+        border-radius: 4px;
+      }
+      .info-row { 
+        display: flex; 
+        margin-bottom: 8px; 
+        align-items: center;
+      }
+      .info-label { 
+        font-weight: 600; 
+        color: #2d3748; 
+        min-width: 100px; 
+        margin-right: 12px;
+      }
+      .info-value { 
+        color: #4a5568; 
+        flex: 1;
+      }
+      .message-box { 
+        background-color: #edf2f7; 
+        padding: 20px; 
+        border-radius: 6px; 
+        margin: 20px 0;
+        border: 1px solid #e2e8f0;
+      }
+      .button { 
+        display: inline-block; 
+        padding: 12px 24px; 
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white; 
+        text-decoration: none; 
+        border-radius: 6px; 
+        font-weight: 600;
+        text-align: center;
+        transition: transform 0.2s;
+      }
+      .button:hover { 
+        transform: translateY(-1px);
+      }
+      .footer { 
+        background-color: #2d3748; 
+        padding: 20px; 
+        text-align: center; 
+        color: #a0aec0;
+      }
+      .footer p { 
+        font-size: 12px; 
+        margin-bottom: 8px;
+      }
+      .social-links { 
+        margin-top: 16px;
+      }
+      .social-links a { 
+        color: #a0aec0; 
+        text-decoration: none; 
+        margin: 0 8px;
+      }
+      .divider { 
+        height: 1px; 
+        background-color: #e2e8f0; 
+        margin: 20px 0;
+      }
+      .success-icon { 
+        color: #48bb78; 
+        font-size: 48px; 
+        text-align: center; 
+        margin-bottom: 16px;
+      }
+      .timestamp { 
+        color: #718096; 
+        font-size: 12px; 
+        font-style: italic;
+      }
+      @media only screen and (max-width: 600px) {
+        .email-wrapper { margin: 10px; }
+        .header, .content, .footer { padding: 20px 15px; }
+        .info-row { flex-direction: column; align-items: flex-start; }
+        .info-label { min-width: auto; margin-bottom: 4px; }
+      }
     </style>
   `;
 
@@ -62,20 +182,54 @@ const getEmailTemplate = (type, data) => {
           ${baseStyle}
         </head>
         <body>
-          <div class="container">
+          <div class="email-wrapper">
             <div class="header">
-              <h2>New Contact Form Submission</h2>
+              <h1>📧 New Contact Form Submission</h1>
+              <p>You have received a new message from your website</p>
             </div>
             <div class="content">
-              <p><strong>Name:</strong> ${data.name}</p>
-              <p><strong>Email:</strong> ${data.email}</p>
-              <p><strong>Phone:</strong> ${data.phone || 'Not provided'}</p>
-              <p><strong>Subject:</strong> ${data.subject || 'Contact Form Submission'}</p>
-              <p><strong>Message:</strong></p>
-              <p>${data.message}</p>
+              <h2>Contact Information</h2>
+              <div class="info-box">
+                <div class="info-row">
+                  <span class="info-label">👤 Name:</span>
+                  <span class="info-value">${data.name}</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">📧 Email:</span>
+                  <span class="info-value">${data.email}</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">📞 Phone:</span>
+                  <span class="info-value">${data.phone || 'Not provided'}</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">📋 Subject:</span>
+                  <span class="info-value">${data.subject || 'Contact Form Submission'}</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">⏰ Submitted:</span>
+                  <span class="info-value timestamp">${new Date().toLocaleString()}</span>
+                </div>
+              </div>
+              
+              <h2>Message</h2>
+              <div class="message-box">
+                <p>${data.message.replace(/\n/g, '<br>')}</p>
+              </div>
+              
+              <div class="divider"></div>
+              <p style="text-align: center; margin-top: 20px;">
+                <a href="mailto:${data.email}" class="button">Reply to ${data.name}</a>
+              </p>
             </div>
             <div class="footer">
-              <p>This email was sent from your website contact form.</p>
+              <p>This email was automatically generated from your website contact form.</p>
+              <p>© ${new Date().getFullYear()} Mantra Group. All rights reserved.</p>
+              <div class="social-links">
+                <a href="#">Website</a> |
+                <a href="#">Contact</a> |
+                <a href="#">Privacy Policy</a>
+              </div>
             </div>
           </div>
         </body>
@@ -92,19 +246,60 @@ const getEmailTemplate = (type, data) => {
           ${baseStyle}
         </head>
         <body>
-          <div class="container">
+          <div class="email-wrapper">
             <div class="header">
-              <h2>Thank you for contacting us!</h2>
+              <h1>✅ Thank You for Contacting Us!</h1>
+              <p>We've received your message and will respond soon</p>
             </div>
             <div class="content">
-              <p>Dear ${data.name},</p>
-              <p>Thank you for reaching out to us. We have received your message and will get back to you within 24 hours.</p>
-              <p><strong>Your message:</strong></p>
-              <p>${data.message}</p>
-              <p>Best regards,<br>${process.env.COMPANY_NAME || 'Our Team'}</p>
+              <div class="success-icon">✅</div>
+              <h2>Hello ${data.name}!</h2>
+              <p>Thank you for reaching out to <strong>Mantra Group</strong>. We have successfully received your message and truly appreciate you taking the time to contact us.</p>
+              
+              <div class="info-box">
+                <h3 style="margin-bottom: 12px; color: #2d3748;">📋 Your Submission Details:</h3>
+                <div class="info-row">
+                  <span class="info-label">📧 Email:</span>
+                  <span class="info-value">${data.email}</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">📋 Subject:</span>
+                  <span class="info-value">${data.subject || 'Contact Form Submission'}</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">⏰ Submitted:</span>
+                  <span class="info-value timestamp">${new Date().toLocaleString()}</span>
+                </div>
+              </div>
+              
+              <h3 style="color: #2d3748; margin-bottom: 12px;">Your Message:</h3>
+              <div class="message-box">
+                <p>${data.message.replace(/\n/g, '<br>')}</p>
+              </div>
+              
+              <div class="divider"></div>
+              
+              <h3 style="color: #2d3748; margin-bottom: 12px;">⏱️ What Happens Next?</h3>
+              <p>• Our team will review your message within <strong>24 hours</strong></p>
+              <p>• You'll receive a personalized response from one of our real estate experts</p>
+              <p>• For urgent matters, feel free to call us directly</p>
+              
+              <div style="text-align: center; margin: 30px 0;">
+                <a href="tel:+1234567890" class="button">📞 Call Us Now</a>
+              </div>
+              
+              <p style="font-size: 14px; color: #718096; text-align: center;">
+                Need immediate assistance? Our office hours are Monday-Friday, 9 AM - 6 PM EST
+              </p>
             </div>
             <div class="footer">
-              <p>This is an automated response. Please do not reply to this email.</p>
+              <p>Thank you for choosing Mantra Group!</p>
+                <p>© ${new Date().getFullYear()} Mantra Group. All rights reserved.</p>
+              <div class="social-links">
+                <a href="#">Visit Our Website</a> |
+                <a href="#">View Properties</a> |
+                <a href="#">Contact Us</a>
+              </div>
             </div>
           </div>
         </body>

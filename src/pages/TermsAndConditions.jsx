@@ -3,6 +3,7 @@ import Header from '../common/Header';
 import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
 import PageTitle from '../common/PageTitle';
+import Service from '../components/Service';
 
 const TermsAndConditions = () => {
 
@@ -17,8 +18,8 @@ const TermsAndConditions = () => {
                 logoWhite={true}
                 headerMenusClass="mx-auto"
                 btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
-                btnLink="/add-new-listing"
-                btnText="Add Listing"
+                btnLink="/contact"
+                btnText="Contact Us"
                 spanClass="icon-right text-gradient" 
                 showHeaderBtn={true}
                 showOffCanvasBtn={false}
@@ -194,15 +195,17 @@ const TermsAndConditions = () => {
                                     </p>
                                 </div>
 
-                                <div className="terms-section mb-5">
+                                <div className="terms-section mb-5" id="contact-terms">
                                     <h3 className="terms-section__title">13. Contact Information</h3>
                                     <p className="terms-section__text">
                                         If you have any questions about these Terms and Conditions, please contact us:
                                     </p>
                                     <p className="terms-section__text">
-                                        <strong>Email:</strong> <a href="mailto:info@cityscape.com">info@cityscape.com</a><br />
-                                        <strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-8900</a><br />
-                                        <strong>Address:</strong> 123 Real Estate Ave, Toronto, ON M5V 3A8<br />
+                                        <strong>Company:</strong> Mantra Group<br />
+                                        <strong>Website:</strong> <a href="https://mantragroup.ca" target="_blank" rel="noopener noreferrer">https://mantragroup.ca</a><br />
+                                        <strong>Email:</strong> <a href="mailto:contact@mantragrp.com">contact@mantragrp.com</a><br />
+                                        <strong>Phone:</strong> <a href="tel:+16475600736">+1 647-560-0736</a><br />
+                                        <strong>Address:</strong> 4040 Steeles Ave W, Woodbridge, ON L4L 4Y5<br />
                                         <strong>Business Hours:</strong> Mon-Fri: 9:00 AM - 6:00 PM, Sat: 10:00 AM - 4:00 PM
                                     </p>
                                 </div>
@@ -213,6 +216,9 @@ const TermsAndConditions = () => {
                     </div>
                 </div>
             </section>
+
+            {/* Services Section */}
+            <Service />
 
             {/* Footer */}
             <Footer/>

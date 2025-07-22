@@ -5,11 +5,12 @@ import Banner from '../components/Banner';
 import About from '../components/About';
 import Property from '../components/Property';
 import PropertyType from '../components/PropertyType';
-import VideoPopup from '../components/VideoPopup';
+
 import Counter from './../components/Counter';
 import Portfolio from '../components/Portfolio';
 import Testimonial from './../components/Testimonial';
 import Blog from './../components/Blog';
+import Service from './../components/Service';
 import FooterTwo from './../common/FooterTwo';
 import Message from './../components/Message';
 import MobileMenu from '../common/MobileMenu';
@@ -31,7 +32,7 @@ const HomeOne = () => {
                     "name": "Mantra Group",
                     "description": "Premier real estate services in Toronto and GTA",
                     "url": import.meta.env.VITE_SITE_URL || 'https://mantragroup.ca',
-                    "telephone": import.meta.env.VITE_BUSINESS_PHONE || '+1-416-555-0123',
+                    "telephone": import.meta.env.VITE_BUSINESS_PHONE || '+1 647-560-0736',
                     "address": {
                         "@type": "PostalAddress",
                         "streetAddress": "123 Bay Street",
@@ -59,8 +60,8 @@ const HomeOne = () => {
                     logoWhite={false}
                     headerMenusClass=""
                     btnClass="btn btn-outline-light d-lg-block d-none"
-                    btnLink="/property"
-                    btnText="Sell Property"
+                    btnLink="/contact"
+                    btnText="Contact Us"
                     spanClass="icon-right text-gradient" 
                     showHeaderBtn={true}
                     showOffCanvasBtn={true}
@@ -80,8 +81,7 @@ const HomeOne = () => {
                 {/* Property Type */}
                 <PropertyType/>
 
-                {/* Video Popup */}
-                <VideoPopup/>
+
 
                 {/* Counter */}
                 <Counter/>
@@ -97,6 +97,9 @@ const HomeOne = () => {
 
                 {/* Blog */}
                 <Blog/>
+
+                {/* Services */}
+                <Service/>
 
                 {/* FooterTwo */}
                 <FooterTwo/>

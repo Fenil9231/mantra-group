@@ -65,7 +65,7 @@ export const starRatings = [
 export const topHeaderInfos = [
     {
         icon: <i className="fas fa-phone"></i>,
-        text: import.meta.env.VITE_BUSINESS_PHONE || '(416) 555-0129',
+        text: import.meta.env.VITE_BUSINESS_PHONE || '+1 647-560-0736',
         link: 'tel:'
     },
     {
@@ -75,7 +75,7 @@ export const topHeaderInfos = [
     },
     {
         icon: <i className="fas fa-map-marker-alt"></i>,
-        text: import.meta.env.VITE_BUSINESS_ADDRESS || '123 King Street West, Toronto, ON',
+        text: import.meta.env.VITE_BUSINESS_ADDRESS || '4040 Steeles Ave W, Woodbridge, ON L4L 4Y5',
         link: ''
     }
 ]
@@ -100,6 +100,10 @@ export const navMenus = [
       path: "/blog"
     },
     {
+      text: "About Us",
+      path: "/about-us",
+    },
+    {
       text: "Contact",
       path: "/contact",
     },
@@ -112,35 +116,35 @@ export const footerInfos = [
     {
         icon: <i className="fas fa-map-marker-alt"></i>,
         text: 'Address',
-        address: import.meta.env.VITE_BUSINESS_ADDRESS || '123 King Street West, Toronto, ON M5H 3T9'
+        address: import.meta.env.VITE_BUSINESS_ADDRESS || '4040 Steeles Ave W, Woodbridge, ON L4L 4Y5'
     },
     {
         icon: <i className="fas fa-phone"></i>,
         text: 'Phone Number',
-        address: import.meta.env.VITE_BUSINESS_PHONE || '(416) 555-0123'
+        address: import.meta.env.VITE_BUSINESS_PHONE || '+1 647-560-0736'
     }
 ]
 
-export const footerServiceLinks = [ 
+export const footerContactLinks = [ 
     {
-        text: 'Reliable Sales',
-        link: '/property'
+        text: 'Contact Us',
+        link: '/contact'
     },
     {
-        text: 'Golden Key Properties',
-        link: '/property'
+        text: 'About Us',
+        link: '/about-us'
     },
     {
-        text: 'Swift Home Sales',
-        link: '/property'
+        text: 'Terms & Conditions',
+        link: '/terms-and-conditions'
     },
     {
-        text: 'Elite Realty Services',
-        link: '/property'
+        text: 'Privacy Policy',
+        link: '/privacy-policy'
     },
     {
-        text: 'Dream Property Solutions',
-        link: '/property'
+        text: 'FAQ',
+        link: '/faq'
     },
 ]
 
@@ -154,20 +158,8 @@ export const footerUsefulLinks = [
         link: '/blog'
     },
     {
-        text: 'FAQ',
-        link: '/faq'
-    },
-    {
         text: 'Property',
         link: '/property'
-    },
-    {
-        text: 'About Us',
-        link: '/about-us'
-    },
-    {
-        text: 'Contact',
-        link: '/contact'
     },
 ]
 

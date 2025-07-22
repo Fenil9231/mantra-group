@@ -33,9 +33,9 @@ const AboutThree = () => {
                                     headingClass="style-left"  
                                     subtitle="About Mantra Group"
                                     subtitleClass="bg-gray-100" 
-                                    title="Your Trusted Partner in Toronto Real Estate" 
+                                    title="Excellence in Real Estate Services" 
                                     renderDesc={true}
-                                    desc="With over a decade of experience in the Toronto real estate market, Mantra Group has established itself as a leading brokerage firm. We specialize in residential, commercial, and investment properties, providing comprehensive real estate solutions tailored to your unique needs. Our team of licensed professionals is committed to delivering exceptional service and achieving outstanding results for our clients."
+                                    desc="At Mantra Group, we bring decades of combined experience in Toronto's dynamic real estate market. Our commitment to excellence, personalized service, and deep market knowledge ensures that whether you're buying, selling, or investing, you receive expert guidance every step of the way. We specialize in residential and commercial properties across the GTA, helping clients achieve their real estate goals with confidence and success."
                                     renderButton={false}
                                     buttonClass="btn-main"
                                     buttonText="View More"
@@ -44,34 +44,26 @@ const AboutThree = () => {
                                 <ul className="check-list style-two">
                                     <li className="check-list__item d-flex align-items-center">
                                         <span className="icon"><i className="fas fa-check"></i></span>
-                                        <span className="text fw-semibold">10+ Years of Toronto Market Expertise</span>
+                                        <span className="text fw-semibold">Extensive GTA Market Knowledge</span>
                                     </li>
                                     <li className="check-list__item d-flex align-items-center">
                                         <span className="icon"><i className="fas fa-check"></i></span>
-                                        <span className="text fw-semibold">Award-Winning Customer Service</span>
+                                        <span className="text fw-semibold">Personalized Client Service</span>
                                     </li>
                                     <li className="check-list__item d-flex align-items-center">
                                         <span className="icon"><i className="fas fa-check"></i></span>
-                                        <span className="text fw-semibold">$500M+ in Successful Transactions</span>
+                                        <span className="text fw-semibold">Proven Track Record of Success</span>
                                     </li>
                                     <li className="check-list__item d-flex align-items-center">
                                         <span className="icon"><i className="fas fa-check"></i></span>
-                                        <span className="text fw-semibold">Licensed & Insured Professionals</span>
+                                        <span className="text fw-semibold">Professional Real Estate Expertise</span>
                                     </li>
                                     <li className="check-list__item d-flex align-items-center">
                                         <span className="icon"><i className="fas fa-check"></i></span>
-                                        <span className="text fw-semibold">Comprehensive Market Analysis</span>
+                                        <span className="text fw-semibold">Comprehensive Property Solutions</span>
                                     </li>
                                 </ul>
-                                <div className="about-button">
-                                    <Button
-                                        btnLink="/about-us" 
-                                        btnClass="btn btn-outline-main bg-white" 
-                                        btnText="Learn More" 
-                                        spanClass="icon-right" 
-                                        iconClass="fas fa-arrow-right" 
-                                    />
-                                </div>
+
                             </div>
                         </div>
                     </div>

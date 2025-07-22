@@ -6,7 +6,7 @@ const contactInfo = {
     icon: 'assets/images/icons/phone-calling.svg',
     text: 'Call us anytime',
     number: import.meta.env.VITE_CONTACT_PHONE || '+1 647-560-0736',
-    desc: 'Real estate is a lucrative industry that involves the buying and selling of properties.'
+    desc: 'Connect with our experienced real estate professionals for personalized guidance and expert market insights.'
 };
 
 const MessageThree = () => {
@@ -22,9 +22,9 @@ const MessageThree = () => {
                                     headingClass="section-heading style-left style-flex mb-0"  
                                     subtitle="Get a quote"
                                     subtitleClass="" 
-                                    title="They chose perfect the property" 
+                                    title="Find Your Perfect Property Today" 
                                     renderDesc={false}
-                                    desc="Real estate is a lucrative ind involves the selling and a reproperties. It encompasses residential"
+                                    desc="Expert guidance for all your real estate needs in Toronto and the Greater Toronto Area"
                                     renderButton={false}
                                     renderBesideDesc={true}
                                     buttonClass="btn-main"

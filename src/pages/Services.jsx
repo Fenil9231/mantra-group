@@ -10,12 +10,16 @@ import Team from '../components/Team';
 import Testimonial from '../components/Testimonial';
 import PropertyTypeThree from '../components/PropertyTypeThree';
 import Service from '../components/Service';
+import MobileMenu from '../common/MobileMenu';
+import OffCanvas from '../common/OffCanvas';
 
 const Services = () => {
 
     return (
         <>
             <PageTitle title="Mantra Group - Our Services" />
+            <OffCanvas/>
+            <MobileMenu/>
             
             {/* Header */}
             <Header 
@@ -24,8 +28,8 @@ const Services = () => {
                 logoWhite={true}
                 headerMenusClass="mx-auto"
                 btnClass="btn btn-outline-main btn-outline-main-dark d-lg-block d-none"
-                btnLink="/add-new-listing"
-                btnText="Add Listing"
+                btnLink="/contact"
+                btnText="Contact Us"
                 spanClass="icon-right text-gradient" 
                 showHeaderBtn={true}
                 showOffCanvasBtn={false}
