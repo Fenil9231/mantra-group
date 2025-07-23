@@ -4,7 +4,7 @@ import { useFormik } from "formik";
 import * as yup from "yup";
 import { toast } from 'react-toastify';
 
-import LoginRegisterThumb from '../../public/assets/images/thumbs/login-img.avif';
+import LoginRegisterThumb from '/assets/images/thumbs/login-img.avif';
 
 const LoginSection = () => {
 
@@ -176,7 +176,7 @@ export default LoginSection;
 // import * as yup from "yup";
 // import { ToastContainer, toast } from 'react-toastify';
 
-// import LoginRegisterThumb from '../../public/assets/images/thumbs/login-img.avif';
+// import LoginRegisterThumb from '/assets/images/thumbs/login-img.avif';
 
 // const LoginSection = () => {
 

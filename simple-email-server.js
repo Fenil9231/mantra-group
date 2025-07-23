@@ -10,7 +10,7 @@ dotenv.config({ path: '.env.local' });
 dotenv.config({ path: '.env.test' });
 
 const app = express();
-const PORT = 3001;
+const PORT = 3002;
 
 // Middleware
 app.use(cors());

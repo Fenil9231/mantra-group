@@ -5,7 +5,7 @@ import Breadcrumb from '../common/Breadcrumb';
 import Cta from '../components/Cta';
 import ContactTop from '../components/ContactTop';
 import ContactUsSection from '../components/ContactUsSection';
-import Service from '../components/Service';
+
 import SEOHead from '../components/SEOHead';
 import MobileMenu from '../common/MobileMenu';
 import OffCanvas from '../common/OffCanvas';
@@ -79,8 +79,7 @@ const Contact = () => {
                 {/* Cta */}
                 <Cta ctaClass=""/>
 
-                {/* Services */}
-                <Service/>
+
 
                 {/* Footer */}
                 <Footer/>

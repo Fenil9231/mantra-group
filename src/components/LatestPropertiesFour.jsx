@@ -1,5 +1,5 @@
 import React from 'react';
-import LatestPropertiesFourThumb from '../../public/assets/images/thumbs/latest-properties-img.png';
+import LatestPropertiesFourThumb from '/assets/images/thumbs/latest-properties-img.png';
 
 const LatestPropertiesFour = () => {
     return (

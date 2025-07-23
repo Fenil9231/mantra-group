@@ -1,6 +1,6 @@
 import React from 'react';
 
-import BannerTwoThumb from '../../public/assets/images/thumbs/banner-two-filter-bg.png';
+import BannerTwoThumb from '/assets/images/thumbs/banner-two-filter-bg.png';
 import TabFilter from '../common/TabFilter';
 import { bannerContent } from '../data/HomeOneData/HomeOneData';
 import { Link } from 'react-router-dom';

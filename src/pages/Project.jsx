@@ -4,7 +4,7 @@ import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
 import Cta from '../components/Cta';
 import ProjectSection from '../components/ProjectSection';
-import Service from '../components/Service';
+
 import PageTitle from '../common/PageTitle';
 
 const Project = () => {
@@ -39,8 +39,7 @@ const Project = () => {
             {/* Project Section */}
             <ProjectSection/>     
 
-            {/* Service Section */}
-            <Service />
+            
 
             {/* Cta */}
             <Cta ctaClass=""/>

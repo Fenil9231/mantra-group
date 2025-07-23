@@ -6,10 +6,7 @@ import './App.css';
 
 import HomeOne from './pages/HomeOne';
 import ScrollToTop from './common/ScrollToTop';
-import Property from './pages/Property';
-import PropertySidebar from './pages/PropertySidebar';
-import PropertyDetails from './pages/PropertyDetails';
-import AddListing from './pages/AddListing';
+// Removed property and listing related imports
 import MapLocation from './pages/MapLocation';
 import AboutUs from './pages/AboutUs';
 import FaqPage from './pages/FaqPage';
@@ -65,10 +62,7 @@ function App() {
         <Wrapper>
           <Routes>
             <Route path="/" element={<HomeOne />} />
-            <Route path="/property" element={<PropertySidebar />} />
-            <Route path="/property-sidebar" element={<PropertySidebar />} />
-            <Route path="/property/:title" element={<PropertyDetails />} />
-            <Route path="/add-new-listing" element={<AddListing />} />
+            {/* Removed property and listing routes */}
             <Route path="/map-location" element={<MapLocation />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/faq" element={<FaqPage />} />

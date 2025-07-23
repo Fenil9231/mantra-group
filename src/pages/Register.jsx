@@ -4,7 +4,7 @@ import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
 import Cta from '../components/Cta';
 import LoginRegister from '../components/LoginRegister';
-import Service from '../components/Service';
+
 import PageTitle from '../common/PageTitle';
 
 const Register = () => {
@@ -53,8 +53,7 @@ const Register = () => {
                 haveAccountLink = "/login"
             />
 
-            {/* Service Section */}
-            <Service />
+            
 
             {/* Cta */}
             <Cta ctaClass=""/>

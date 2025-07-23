@@ -4,7 +4,7 @@ import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
 import Cta from '../components/Cta';
 import LoginRegister from '../components/LoginRegister';
-import Service from '../components/Service';
+
 import PageTitle from '../common/PageTitle';
 import LoginSection from '../components/LoginSection';
 
@@ -39,8 +39,7 @@ const Login = () => {
 
             <LoginSection/>
             
-            {/* Service Section */}
-            <Service />
+            
 
             {/* Cta */}
             <Cta ctaClass=""/>

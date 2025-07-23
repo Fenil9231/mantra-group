@@ -6,7 +6,7 @@ import Cta from '../components/Cta';
 import FaqTwo from '../components/FaqTwo';
 import FaqContactUs from '../components/FaqContactUs';
 import CounterFour from '../components/CounterFour';
-import Service from '../components/Service';
+
 import SEOHead from '../components/SEOHead';
 import MobileMenu from '../common/MobileMenu';
 import OffCanvas from '../common/OffCanvas';
@@ -89,8 +89,7 @@ const FaqPage = () => {
             {/* Cta */}
             <Cta ctaClass=""/>
 
-            {/* Services */}
-            <Service/>
+
 
             {/* Footer */}
             <Footer/>

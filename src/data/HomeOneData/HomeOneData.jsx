@@ -1,12 +1,12 @@
 import React from 'react'; 
 
 // Banner One
-import BannerImg from '../../../public/assets/images/thumbs/banner-img.png'; 
+import BannerImg from '/assets/images/thumbs/banner-img.png'; 
 export const bannerContent = {
-    subtitle: 'Premier Real Estate Services',
-    title: 'Your Dream Property ',
-    gradientTitle: 'Awaits You ',
-    desc: 'Experience excellence in real estate with Mantra Group. We provide comprehensive property solutions including buying, selling, leasing, and investment opportunities across Toronto and the Greater Toronto Area. Let our expertise guide you to your perfect property.',
+    subtitle: 'Proudly Serving the South Asian Community',
+    title: 'Pre-Construction & Commercial ',
+    gradientTitle: 'Real Estate Experts ',
+    desc: 'Mantra Group specializes in pre-construction and commercial real estate across Ontario and Alberta. We proudly serve the South Asian community with expert guidance in Punjabi, Hindi, and Urdu. From new developments to commercial investments, we help you secure your future with confidence.',
     thumb: BannerImg
 }
 
@@ -14,11 +14,11 @@ export const bannerContent = {
 export const filterTabs = [
     {
         id: 1,
-        text: 'Buy'
+        text: 'Pre-Construction'
     },
     {
         id: 2,
-        text: 'Sell'
+        text: 'Commercial'
     },
 ]
   
@@ -29,254 +29,18 @@ export const aboutStatistics = {
     number: '2500+',
     text: 'Satisfied Clients'
 }
-import aboutContentThumb from '../../../public/assets/images/thumbs/about-img.png'; 
-import aboutContentIcon from '../../../public/assets/images/icons/about-icon.svg'; 
+import aboutContentThumb from '/assets/images/thumbs/about-img.png';
+import aboutContentIcon from '/assets/images/icons/about-icon.svg'; 
 export const aboutContent = {
     thumb: aboutContentThumb,
     icon: aboutContentIcon,
-    title: 'Your Trusted Real Estate Partner',
-    desc: 'At Mantra Group, we bring decades of combined experience in Toronto\'s real estate market. Our commitment to excellence, personalized service, and deep market knowledge ensures that whether you\'re buying, selling, or investing, you receive expert guidance every step of the way. We specialize in residential and commercial properties across the GTA, helping clients achieve their real estate goals with confidence and success.'
+    title: 'Your Trusted Partner for Pre-Construction & Commercial Real Estate',
+    desc: 'Mantra Group proudly serves the South Asian community across Ontario and Alberta with specialized expertise in pre-construction and commercial real estate. Our multilingual team speaks Punjabi, Hindi, and Urdu, ensuring clear communication throughout your investment journey. We understand the unique needs of our community and provide culturally sensitive service while helping you secure prime pre-construction opportunities and commercial investments for long-term wealth building.'
 }
 
 
-// Property Data 
-import propertyThumb1 from '../../../public/assets/images/thumbs/property-1.png'; 
-import propertyThumb2 from '../../../public/assets/images/thumbs/property-2.png'; 
-import propertyThumb3 from '../../../public/assets/images/thumbs/property-3.png'; 
-import propertyThumb4 from '../../../public/assets/images/thumbs/property-4.png'; 
-import propertyThumb5 from '../../../public/assets/images/thumbs/property-5.png'; 
-import propertyThumb6 from '../../../public/assets/images/thumbs/property-6.png'; 
-import propertyThumb7 from '../../../public/assets/images/thumbs/property-7.png'; 
-import propertyThumb8 from '../../../public/assets/images/thumbs/property-8.png'; 
-import propertyThumb9 from '../../../public/assets/images/thumbs/property-9.png'; 
-import propertyThumb10 from '../../../public/assets/images/thumbs/property-10.png'; 
-import propertyThumb11 from '../../../public/assets/images/thumbs/property-11.png'; 
-import propertyThumb12 from '../../../public/assets/images/thumbs/property-12.png'; 
-export const properties = [
-    {
-        id: 1,
-        thumb: propertyThumb1,
-        price: '$850,000',
-        day: '',
-        title: 'Modern Condo in King West Village',
-        desc: 'Stunning 2-bedroom condo in Toronto\'s vibrant King West district. Features floor-to-ceiling windows, premium finishes, and access to world-class amenities. Walking distance to Union Station, Entertainment District, and top restaurants.',
-        locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '4040 Steeles Ave W, Woodbridge, ON L4L 4Y5',
-        amenities: [
-            {
-                icon: <i className="fas fa-bed"></i>,
-                text: '2 Beds',
-            },
-            {
-                icon: <i className="fas fa-bath"></i>,
-                text: ' 2 Baths ',
-            }
-        ],
-        btnText: 'View Details',
-        dataSort: 'Newest',
-        dataStatuses: 'Sell',
-        dataTypes: 'Houses',
-        dataLocations: "Toronto",
-    },
-    {
-        id: 2,
-        thumb: propertyThumb2,
-        price: '$1,250,000',
-        day: '',
-        title: 'Luxury Family Home in North York',
-        desc: 'Beautiful 4-bedroom detached home in prestigious North York neighborhood. Features updated kitchen, hardwood floors throughout, finished basement, and private backyard. Close to top-rated schools and TTC access.',
-        locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '456 Willowdale Avenue, North York, ON',
-        amenities: [
-            {
-                icon: <i className="fas fa-bed"></i>,
-                text: '4 Beds',
-            },
-            {
-                icon: <i className="fas fa-bath"></i>,
-                text: ' 3 Baths ',
-            }
-        ],
-        btnText: 'View Details',
-        dataSort: 'Best Seller',
-        dataStatuses: 'Buy',
-        dataTypes: 'Apartments',
-        dataLocations: "Toronto",
-    },
-    {
-        id: 4,
-        thumb: propertyThumb4,
-        price: '$2,100,000',
-        day: '',
-        title: 'Executive Townhouse in Yorkville',
-        desc: 'Sophisticated 5-bedroom executive townhouse in Toronto\'s prestigious Yorkville district. Features designer finishes, gourmet kitchen, rooftop terrace, and private garage. Steps from luxury shopping, fine dining, and cultural attractions.',
-        locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '123 Queen Street West, Toronto, ON',
-        amenities: [
-            {
-                icon: <i className="fas fa-bed"></i>,
-                text: '5 Beds',
-            },
-            {
-                icon: <i className="fas fa-bath"></i>,
-                text: ' 4 Baths ',
-            }
-        ],
-        btnText: 'View Details',
-        dataSort: 'Low Price',
-        dataStatuses: 'Sell',
-        dataTypes: 'Villa',
-        dataLocations: "Ontario",
-    },
-    {
-        id: 5,
-        thumb: propertyThumb5,
-        price: '$3,250,000',
-        day: '',
-        title: 'Luxury Estate in Forest Hill',
-        desc: 'Magnificent 6-bedroom luxury estate in Toronto\'s exclusive Forest Hill neighborhood. Features grand foyer, chef\'s kitchen, wine cellar, home theater, and beautifully landscaped grounds. Perfect for entertaining and family living.',
-        locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '321 King Street East, Toronto, ON',
-        amenities: [
-            {
-                icon: <i className="fas fa-bed"></i>,
-                text: '6 Beds',
-            },
-            {
-                icon: <i className="fas fa-bath"></i>,
-                text: ' 4 Baths ',
-            }
-        ],
-        btnText: 'View Details',
-        dataSort: 'High Price',
-        dataStatuses: 'Buy',
-        dataTypes: 'Houses',
-        dataLocations: "Toronto",
-    },
-    {
-        id: 7,
-        thumb: propertyThumb7,
-        price: '$4,500,000',
-        day: '',
-        title: 'Premium Commercial Office Space',
-        desc: 'Prime commercial office space in downtown Toronto\'s financial district. Features modern amenities, floor-to-ceiling windows, executive boardrooms, and premium location with excellent transit access. Perfect for growing businesses.',
-        locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '777 Dundas Street West, Toronto, ON',
-        amenities: [
-            {
-                icon: <i className="fas fa-building"></i>,
-                text: '15,000 sq ft',
-            },
-            {
-                icon: <i className="fas fa-car"></i>,
-                text: ' 50 Parking ',
-            }
-        ],
-        btnText: 'View Details',
-        dataSort: 'Best Seller',
-        dataStatuses: 'Sell',
-        dataTypes: 'Office',
-        dataLocations: "Toronto",
-    },
-    {
-        id: 8,
-        thumb: propertyThumb8,
-        price: '$1,850,000',
-        day: '',
-        title: 'Penthouse Suite in Midtown',
-        desc: 'Stunning penthouse suite in prestigious Midtown Toronto. Features panoramic city views, private terrace, premium finishes, and concierge services. Located near Yonge-Eglinton with excellent transit and amenities.',
-        locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '888 Yonge Street, Toronto, ON',
-        amenities: [
-            {
-                icon: <i className="fas fa-bed"></i>,
-                text: '3 Beds',
-            },
-            {
-                icon: <i className="fas fa-bath"></i>,
-                text: ' 3 Baths ',
-            }
-        ],
-        btnText: 'View Details',
-        dataSort: 'Best Match',
-        dataStatuses: 'Buy',
-        dataTypes: 'Villa',
-        dataLocations: "Toronto",
-    },
-    {
-        id: 10,
-        thumb: propertyThumb10,
-        price: '$950,000',
-        day: '',
-        title: 'Modern Loft in Entertainment District',
-        desc: 'Stylish converted loft in Toronto\'s vibrant Entertainment District. Features exposed brick, high ceilings, industrial finishes, and rooftop access. Walking distance to Rogers Centre, CN Tower, and waterfront.',
-        locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '111 College Street, Toronto, ON',
-        amenities: [
-            {
-                icon: <i className="fas fa-bed"></i>,
-                text: '2 Beds',
-            },
-            {
-                icon: <i className="fas fa-bath"></i>,
-                text: ' 2 Baths ',
-            }
-        ],
-        btnText: 'View Details',
-        dataSort: 'High Price',
-        dataStatuses: 'Sell',
-        dataTypes: 'Apartments',
-        dataLocations: "Toronto",
-    },
-    {
-        id: 11,
-        thumb: propertyThumb11,
-        price: '$2,800,000',
-        day: '',
-        title: 'Executive Office Building in Financial District',
-        desc: 'Premium office building in Toronto\'s Financial District. Features modern infrastructure, high-speed elevators, executive suites, and prime location near major banks and corporate headquarters. Excellent investment opportunity.',
-        locationIcon: <i className="fas fa-map-marker-alt"></i>,
-        location: '222 Spadina Avenue, Toronto, ON',
-        amenities: [
-            {
-                icon: <i className="fas fa-building"></i>,
-                text: '25,000 sq ft',
-            },
-            {
-                icon: <i className="fas fa-car"></i>,
-                text: ' 100 Parking ',
-            }
-        ],
-        btnText: 'View Details',
-        dataSort: 'Newest',
-        dataStatuses: 'Buy',
-        dataTypes: 'Office',
-        dataLocations: "Toronto",
-    },
-]
-
-
-// Property Type Data
-import propertyTypeIcon1 from '../../../public/assets/images/icons/property-type-icon1.svg';
-import propertyTypeIcon2 from '../../../public/assets/images/icons/property-type-icon2.svg';
-import propertyTypeIcon3 from '../../../public/assets/images/icons/property-type-icon3.svg';
-export const propertyTypes = [ 
-    {
-        icon: propertyTypeIcon1,
-        title: 'Residential Properties',
-        desc: 'Comprehensive residential real estate services including condos, townhomes, and detached houses. We help families find their perfect home with expert market knowledge and personalized service.'
-    },
-    {
-        icon: propertyTypeIcon2,
-        title: 'Commercial Real Estate',
-        desc: 'Professional commercial property services for office spaces, retail locations, and industrial properties. Strategic guidance for businesses looking to expand or relocate.'
-    },
-    {
-        icon: propertyTypeIcon3,
-        title: 'Investment Opportunities',
-        desc: 'Expert investment property analysis and portfolio management. We identify high-potential properties and provide comprehensive market insights to maximize your real estate investments.'
-    },
-]
+// Property listings functionality has been removed
+// Mantra Group now focuses on pre-construction and commercial real estate consultation
 
 
 // Counts Data
@@ -301,10 +65,10 @@ export const counts = [
 
 
 // portfolio  Data
-import portfolioThumb1 from '../../../public/assets/images/thumbs/portfolio1.png'; 
-import portfolioThumb2 from '../../../public/assets/images/thumbs/portfolio2.png'; 
-import portfolioThumb3 from '../../../public/assets/images/thumbs/portfolio3.png'; 
-import portfolioThumb4 from '../../../public/assets/images/thumbs/portfolio4.png'; 
+import portfolioThumb1 from '/assets/images/thumbs/portfolio1.png';
+import portfolioThumb2 from '/assets/images/thumbs/portfolio2.png';
+import portfolioThumb3 from '/assets/images/thumbs/portfolio3.png';
+import portfolioThumb4 from '/assets/images/thumbs/portfolio4.png'; 
 export const portfolios = [
     {
         thumb: portfolioThumb1,
@@ -334,7 +98,7 @@ export const portfolios = [
 
 
 // Testimonial Data
-import quoteIcon from '../../../public/assets/images/icons/quote.svg';
+import quoteIcon from '/assets/images/icons/quote.svg';
 export const testimonials = [
     {
         name: 'Sarah Chen',
@@ -357,12 +121,12 @@ export const testimonials = [
 ]
 
 // Blog Data
-import blogThumb1 from '../../../public/assets/images/thumbs/blog1.png'; 
-import blogThumb2 from '../../../public/assets/images/thumbs/blog2.png'; 
-import blogThumb3 from '../../../public/assets/images/thumbs/blog3.png'; 
-import blogThumb4 from '../../../public/assets/images/thumbs/property-4.png'; 
-import blogThumb5 from '../../../public/assets/images/thumbs/property-5.png'; 
-import blogThumb6 from '../../../public/assets/images/thumbs/property-6.png'; 
+import blogThumb1 from '/assets/images/thumbs/blog1.png';
+import blogThumb2 from '/assets/images/thumbs/blog2.png';
+import blogThumb3 from '/assets/images/thumbs/blog3.png';
+import blogThumb4 from '/assets/images/thumbs/property-4.png';
+import blogThumb5 from '/assets/images/thumbs/property-5.png';
+import blogThumb6 from '/assets/images/thumbs/property-6.png'; 
 
 export const blogs = [
     {

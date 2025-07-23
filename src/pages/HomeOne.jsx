@@ -3,14 +3,14 @@ import TopHeader from '../common/TopHeader';
 import Header from './../common/Header';
 import Banner from '../components/Banner';
 import About from '../components/About';
-import Property from '../components/Property';
-import PropertyType from '../components/PropertyType';
+// Removed Property component import
+// PropertyType component removed - focusing on consultation services
 
 import Counter from './../components/Counter';
 import Portfolio from '../components/Portfolio';
 import Testimonial from './../components/Testimonial';
 import Blog from './../components/Blog';
-import Service from './../components/Service';
+
 import FooterTwo from './../common/FooterTwo';
 import Message from './../components/Message';
 import MobileMenu from '../common/MobileMenu';
@@ -21,9 +21,9 @@ const HomeOne = () => {
     return (
         <>
             <SEOHead 
-                title="Toronto Real Estate - Find Your Dream Home | Mantra Group"
-                description="Discover premium real estate properties in Toronto and GTA. Expert real estate services, luxury homes, condos, and investment opportunities with Mantra Group."
-                keywords="Toronto real estate, GTA properties, luxury homes, condos for sale, real estate agent Toronto, property investment, Mantra Group"
+                title="Pre-Construction & Commercial Real Estate | Mantra Group - Serving South Asian Community"
+                description="Specialized in pre-construction and commercial real estate across Ontario and Alberta. Proudly serving the South Asian community with expert guidance in Punjabi, Hindi, and Urdu."
+                keywords="pre-construction Ontario, commercial real estate Alberta, South Asian real estate, Punjabi realtor, Hindi speaking agent, pre-construction condos Toronto"
                 canonicalUrl={`${import.meta.env.VITE_SITE_URL || 'https://mantragroup.ca'}/`}
                 ogImage={`${import.meta.env.VITE_SITE_URL || 'https://mantragroup.ca'}/assets/images/og-home.jpg`}
                 structuredData={{
@@ -75,11 +75,9 @@ const HomeOne = () => {
                 {/* About */}
                 <About/>
 
-                {/* Property */}
-                <Property/>
+                {/* Property section removed - focusing on pre-construction and commercial */}
 
-                {/* Property Type */}
-                <PropertyType/>
+                {/* Property Type section removed - focusing on consultation services */}
 
 
 
@@ -98,8 +96,7 @@ const HomeOne = () => {
                 {/* Blog */}
                 <Blog/>
 
-                {/* Services */}
-                <Service/>
+
 
                 {/* FooterTwo */}
                 <FooterTwo/>
