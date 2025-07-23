@@ -4,7 +4,7 @@ import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
 import Cta from '../components/Cta';
 import AccountSection from '../components/AccountSection';
-import Service from '../components/Service';
+
 import PageTitle from '../common/PageTitle';
 
 const Account = () => {
@@ -39,8 +39,7 @@ const Account = () => {
             {/* Account Section */}
             <AccountSection/>    
 
-            {/* Service Section */}
-            <Service />
+            
 
             {/* Cta */}
             <Cta ctaClass=""/>

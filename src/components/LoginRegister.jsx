@@ -4,7 +4,7 @@ import { useFormik } from "formik";
 import * as yup from "yup";
 import { toast } from 'react-toastify';
 
-import LoginRegisterThumb from '../../public/assets/images/thumbs/login-img.avif';
+import LoginRegisterThumb from '/assets/images/thumbs/login-img.avif';
 
 const LoginRegister = ({titleText, firstNameCol, showFirstName, lastNameCol, showLastName, passwordCol, showConfirm, btnText, showForgotRemember, showTermCondition, haveAccountText, haveAccountLink, haveAccountLinkText}) => {
 

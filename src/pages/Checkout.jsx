@@ -4,7 +4,7 @@ import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
 import Cta from '../components/Cta';
 import CheckoutSection from '../components/CheckoutSection';
-import Service from '../components/Service';
+
 import PageTitle from '../common/PageTitle';
 
 const Checkout = () => {
@@ -37,8 +37,7 @@ const Checkout = () => {
             {/* Checkout Section */}
             <CheckoutSection/>
 
-            {/* Service Section */}
-            <Service />
+            
 
             {/* Cta */}
             <Cta ctaClass=""/>

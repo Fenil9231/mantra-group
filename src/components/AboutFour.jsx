@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutFourThumb from '../../public/assets/images/thumbs/about-four.png';
+import AboutFourThumb from '/assets/images/thumbs/about-four.png';
 
 
 const AboutFour = () => {

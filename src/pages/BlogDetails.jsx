@@ -6,7 +6,7 @@ import Cta from '../components/Cta';
 import { useLocation } from 'react-router-dom';
 import BlogDetailsSection from '../components/BlogDetailsSection';
 // import { BlogDataContext } from '../contextApi/BlogDataContext';
-import Service from '../components/Service';
+
 import SEOHead from '../components/SEOHead';
 import MobileMenu from '../common/MobileMenu';
 import OffCanvas from '../common/OffCanvas';
@@ -81,8 +81,7 @@ const BlogDetails = () => {
             {/* Cta */}
             <Cta ctaClass=""/>
 
-            {/* Services */}
-            <Service/>
+
 
             {/* Footer */}
             <Footer/>

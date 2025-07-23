@@ -11,7 +11,7 @@ dotenv.config({ path: '.env.test' });
 // Test mode is controlled by .env file
 
 const app = express();
-const PORT = 3000;
+const PORT = 3002;
 
 // Middleware
 app.use(cors());

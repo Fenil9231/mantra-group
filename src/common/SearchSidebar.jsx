@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { bedBaths, priceRanges, propertyTypes, reasons, searchAmenities } from '../data/OthersPageData/OthersPageData';
+import { bedBaths, priceRanges, reasons, searchAmenities } from '../data/OthersPageData/OthersPageData';
 import CustomRangeSlider from './CustomRangeSlider';
 import { PropertyFilterContext } from '../contextApi/PropertyFilterContext';
 
@@ -14,19 +14,10 @@ const SearchSidebar = () => {
             <form action="#" method="post" autoComplete="off">
                 
                 <div className="search-sidebar__item">
-                    <h6 className="search-sidebar__title mb-4">Property Type</h6>
-                    {
-                        propertyTypes.map((propertyType, propertyTypeIndex) => {
-                            return (
-                                <div className="common-check" key={propertyTypeIndex}>
-                                    <input className="form-check-input" type="checkbox" id={propertyType.text} value={propertyType.value}  onChange={handleDataTypeChange}/>
-                                    <label className="form-check-label" htmlFor={propertyType.text}>
-                                        {propertyType.text}
-                                    </label>
-                                </div>
-                            )
-                        })
-                    }
+                    <div className="alert alert-info">
+                        <h6 className="mb-2">Service Update</h6>
+                        <p className="mb-0 small">We now focus on pre-construction and commercial real estate consultation. Contact us for specialized assistance.</p>
+                    </div>
                 </div>
                 
                 <div className="search-sidebar__item">

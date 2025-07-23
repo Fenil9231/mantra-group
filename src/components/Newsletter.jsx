@@ -1,5 +1,5 @@
 import React from 'react';
-import NewsletterThumb from '../../public/assets/images/thumbs/newsletter-bg.png';
+import NewsletterThumb from '/assets/images/thumbs/newsletter-bg.png';
 import NewsletterForm from '../common/NewsletterForm';
 
 const Newsletter = () => {

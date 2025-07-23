@@ -1,4 +1,5 @@
-import { properties, blogs } from '../data/HomeOneData/HomeOneData';
+// Properties import removed - focusing on consultation services
+import { blogs } from '../data/HomeOneData/HomeOneData';
 import { projectItems } from '../data/OthersPageData/OthersPageData';
 import { slugURL } from '../utility/Utility';
 
@@ -30,17 +31,9 @@ const getSiteUrl = () => {
   return process.env.VITE_SITE_URL || 'https://your-domain.com';
 };
 
-// Generate dynamic property URLs
+// Generate dynamic property URLs - removed as focusing on consultation services
 const generatePropertyUrls = () => {
-  return properties.map(property => {
-    const propertyURL = slugURL({ url: 'property', slug: property.title });
-    return {
-      path: propertyURL,
-      priority: '0.8',
-      changefreq: 'weekly',
-      lastmod: new Date().toISOString().split('T')[0]
-    };
-  });
+  return [];
 };
 
 // Generate dynamic project URLs

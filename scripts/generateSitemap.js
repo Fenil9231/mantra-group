@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Import data directly
-import { properties } from '../src/data/HomeOneData/HomeOneData.jsx';
+// Properties import removed - focusing on consultation services
 import { projectItems } from '../src/data/OthersPageData/OthersPageData.jsx';
 import { blogs } from '../src/data/HomeOneData/HomeOneData.jsx';
 
@@ -47,17 +47,9 @@ const getSiteUrl = () => {
   return process.env.VITE_SITE_URL || process.env.SITE_URL || 'https://your-domain.com';
 };
 
-// Generate dynamic property URLs
+// Generate dynamic property URLs - removed as focusing on consultation services
 const generatePropertyUrls = () => {
-  return properties.map(property => {
-    const propertyURL = createSlugURL('property', property.title);
-    return {
-      path: propertyURL,
-      priority: '0.8',
-      changefreq: 'weekly',
-      lastmod: new Date().toISOString().split('T')[0]
-    };
-  });
+  return [];
 };
 
 // Generate dynamic project URLs
@@ -175,7 +167,7 @@ const generateSitemapFiles = async () => {
     console.log(`   - ${publicRobotsPath}`);
     
     // Generate summary report
-    const propertyCount = properties.length;
+    const propertyCount = 0; // Properties removed - focusing on consultation
     const projectCount = projectItems.length;
     const blogCount = blogs.length;
     const staticCount = staticRoutes.length;

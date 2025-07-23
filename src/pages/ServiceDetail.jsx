@@ -8,8 +8,8 @@ import SectionHeading from '../common/SectionHeading';
 import Cta from '../components/Cta';
 import Counter from '../components/Counter';
 import Testimonial from '../components/Testimonial';
-import PropertyTypeThree from '../components/PropertyTypeThree';
-import Service from '../components/Service';
+
+
 import MobileMenu from '../common/MobileMenu';
 import OffCanvas from '../common/OffCanvas';
 
@@ -855,11 +855,9 @@ const ServiceDetail = () => {
             {/* Testimonials Section */}
             <Testimonial />
 
-            {/* Property Types Section */}
-            <PropertyTypeThree />
 
-            {/* Service Section */}
-            <Service />
+
+            
 
             {/* CTA */}
             <Cta ctaClass="" />

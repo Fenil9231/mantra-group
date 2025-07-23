@@ -4,7 +4,7 @@ import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
 import Cta from '../components/Cta';
 import MapLocationSection from '../components/MapLocationSection';
-import Service from '../components/Service';
+
 import PageTitle from '../common/PageTitle';
 
 const MapLocation = () => {
@@ -39,8 +39,7 @@ const MapLocation = () => {
             {/* Map Location  */}
             <MapLocationSection/>
 
-            {/* Service Section */}
-            <Service />
+            
 
             {/* Cta */}
             <Cta ctaClass=""/>

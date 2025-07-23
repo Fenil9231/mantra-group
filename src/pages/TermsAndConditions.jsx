@@ -3,7 +3,7 @@ import Header from '../common/Header';
 import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
 import PageTitle from '../common/PageTitle';
-import Service from '../components/Service';
+
 
 const TermsAndConditions = () => {
 
@@ -217,8 +217,7 @@ const TermsAndConditions = () => {
                 </div>
             </section>
 
-            {/* Services Section */}
-            <Service />
+
 
             {/* Footer */}
             <Footer/>

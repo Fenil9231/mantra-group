@@ -1,6 +1,6 @@
 import React from 'react';
 
-import messageThumb from '../../public/assets/images/thumbs/message-img.png';
+import messageThumb from '/assets/images/thumbs/message-img.png';
 
 // Custom styles for property info cards
 const propertyCardStyles = {

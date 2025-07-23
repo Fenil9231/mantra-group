@@ -4,9 +4,9 @@ import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
 import Cta from '../components/Cta';
 import AboutThree from '../components/AboutThree';
-import PropertyTypeThree from '../components/PropertyTypeThree';
+
 import Team from '../components/Team';
-import Service from '../components/Service';
+
 import PageTitle from '../common/PageTitle';
 import MobileMenu from '../common/MobileMenu';
 import OffCanvas from '../common/OffCanvas';
@@ -44,13 +44,12 @@ const AboutUs = () => {
 
             <Team sectionClass=""/>
 
-            <PropertyTypeThree/> 
+
 
             {/* Cta */}
             <Cta ctaClass=""/>
 
-            {/* Services */}
-            <Service/>
+
 
             {/* Footer */}
             <Footer/>

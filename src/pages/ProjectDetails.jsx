@@ -4,7 +4,7 @@ import Footer from '../common/Footer';
 import Breadcrumb from '../common/Breadcrumb';
 import Cta from '../components/Cta';
 import ProjectDetailsSection from '../components/ProjectDetailsSection';
-import Service from '../components/Service';
+
 import { useParams } from 'react-router-dom';
 import PageTitle from '../common/PageTitle';
 
@@ -43,8 +43,7 @@ const ProjectDetails = () => {
             {/* Project Details Section */}
             <ProjectDetailsSection/>
 
-            {/* Service Section */}
-            <Service />
+            
 
             {/* Cta */}
             <Cta ctaClass=""/>

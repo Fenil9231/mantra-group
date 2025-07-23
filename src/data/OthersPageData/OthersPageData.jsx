@@ -1,32 +1,7 @@
 import React from 'react';
 
 // ============================== Property Sidebar Page Data Start ==============================
-export const propertyTypes = [
-    {
-        text: 'House',
-        value: 'Houses',
-    },
-    {
-        text: 'Apartment',
-        value: 'Apartments',
-    },
-    {
-        text: 'Office',
-        value: 'Office',
-    },
-    {
-        text: 'Villa',
-        value: 'Villa',
-    },
-    {
-        text: 'Single Family',
-        value: 'Single Family',
-    },
-    {
-        text: 'Luxury Home',
-        value: 'Luxury Home',
-    },
-]
+// Property types removed - focusing on consultation services
 
 export const reasons = [
     {
@@ -95,10 +70,10 @@ export const bedBaths = [
 
 
 // ============================== Property Details Page Data Start ==============================
-import propertyDetailsThumb1 from '../../../public/assets/images/thumbs/property-details-1.png';
-import propertyDetailsThumb2 from '../../../public/assets/images/thumbs/property-details-2.png';
-import propertyDetailsThumb3 from '../../../public/assets/images/thumbs/property-details-3.png';
-import propertyDetailsThumb4 from '../../../public/assets/images/thumbs/property-details-4.png';
+import propertyDetailsThumb1 from '/assets/images/thumbs/property-details-1.png';
+import propertyDetailsThumb2 from '/assets/images/thumbs/property-details-2.png';
+import propertyDetailsThumb3 from '/assets/images/thumbs/property-details-3.png';
+import propertyDetailsThumb4 from '/assets/images/thumbs/property-details-4.png';
 export const propertyDetailsThumbs = [
     {
         thumb: propertyDetailsThumb1
@@ -114,12 +89,12 @@ export const propertyDetailsThumbs = [
     },
 ]
 
-import amenitiesIcon1 from '../../../public/assets/images/icons/amenities1.svg';
-import amenitiesIcon2 from '../../../public/assets/images/icons/amenities2.svg';
-import amenitiesIcon3 from '../../../public/assets/images/icons/amenities3.svg';
-import amenitiesIcon4 from '../../../public/assets/images/icons/amenities4.svg';
-import amenitiesIcon5 from '../../../public/assets/images/icons/amenities5.svg';
-import amenitiesIcon6 from '../../../public/assets/images/icons/amenities6.svg';
+import amenitiesIcon1 from '/assets/images/icons/amenities1.svg';
+import amenitiesIcon2 from '/assets/images/icons/amenities2.svg';
+import amenitiesIcon3 from '/assets/images/icons/amenities3.svg';
+import amenitiesIcon4 from '/assets/images/icons/amenities4.svg';
+import amenitiesIcon5 from '/assets/images/icons/amenities5.svg';
+import amenitiesIcon6 from '/assets/images/icons/amenities6.svg';
 export const propertyDetailsAmenities = [ 
     {
         icon: amenitiesIcon1,
@@ -215,12 +190,12 @@ export const categoryLists = [
     },
 ]
 
-import SidebarPropertyImg1 from '../../../public/assets/images/thumbs/properties-1.png';
-import SidebarPropertyImg2 from '../../../public/assets/images/thumbs/properties-2.png';
-import SidebarPropertyImg3 from '../../../public/assets/images/thumbs/properties-3.png';
-import SidebarPropertyImg4 from '../../../public/assets/images/thumbs/properties-4.png';
-import SidebarPropertyImg5 from '../../../public/assets/images/thumbs/properties-5.png';
-import SidebarPropertyImg6 from '../../../public/assets/images/thumbs/properties-6.png';
+import SidebarPropertyImg1 from '/assets/images/thumbs/properties-1.png';
+import SidebarPropertyImg2 from '/assets/images/thumbs/properties-2.png';
+import SidebarPropertyImg3 from '/assets/images/thumbs/properties-3.png';
+import SidebarPropertyImg4 from '/assets/images/thumbs/properties-4.png';
+import SidebarPropertyImg5 from '/assets/images/thumbs/properties-5.png';
+import SidebarPropertyImg6 from '/assets/images/thumbs/properties-6.png';
 
 export const sidebarProperties = [
     {
@@ -284,73 +259,8 @@ export const sidebarTags = [
 // ============================== Property Details Page Data End ==============================
 
 
-// ============================== Listing Page Data Start ==============================
-export const addListings = [
-    {
-        link: '#basicInformation',
-        text: 'Basic Information'
-    },
-    {
-        link: '#propertyGallery',
-        text: 'Property Gallery'
-    },
-    {
-        link: '#propertyInformation',
-        text: 'Property Information'
-    },
-    {
-        link: '#propertyContactDetails',
-        text: 'Property Contact Details'
-    },
-]
-
-export const addAmenities = [
-    {
-        text: 'Air Condition'
-    },
-    {
-        text: 'Lawn'
-    },
-    {
-        text: 'Swimming Pool'
-    },
-    {
-        text: 'Barbeque'
-    },
-    {
-        text: 'Microwave'
-    },
-    {
-        text: 'TV Cable'
-    },
-    {
-        text: 'Dryer'
-    },
-    {
-        text: 'Outdoor Shower'
-    },
-    {
-        text: 'Washer'
-    },
-    {
-        text: 'Gym'
-    },
-    {
-        text: 'Refrigerator'
-    },
-    {
-        text: 'WiFi'
-    },
-    {
-        text: 'Laundry'
-    },
-    {
-        text: 'Souna'
-    },
-    {
-        text: 'Window Coverings'
-    },
-]
+// ============================== Listing Page Data Removed ==============================
+// Listing functionality has been removed from the website
 // ============================== Listing Page Data End ==============================
 
 
@@ -703,9 +613,9 @@ export const mapLocations = [
 
 
 // ============================== Team Section Data Start ==============================
-import teamImg1 from '../../../public/assets/images/thumbs/team1.png';
-import teamImg2 from '../../../public/assets/images/thumbs/team2.png';
-import teamImg3 from '../../../public/assets/images/thumbs/team3.png';
+import teamImg1 from '/assets/images/thumbs/team1.png';
+import teamImg2 from '/assets/images/thumbs/team2.png';
+import teamImg3 from '/assets/images/thumbs/team3.png';
 
 export const teams = [
     {
@@ -733,10 +643,10 @@ export const teams = [
 
 
 // ====================== Faq Page Counter Four Data Start ====================
-import counterFourIcon1 from '../../../public/assets/images/icons/counter-four1.svg';
-import counterFourIcon2 from '../../../public/assets/images/icons/counter-four2.svg';
-import counterFourIcon3 from '../../../public/assets/images/icons/counter-four3.svg';
-import counterFourIcon4 from '../../../public/assets/images/icons/counter-four4.svg';
+import counterFourIcon1 from '/assets/images/icons/counter-four1.svg';
+import counterFourIcon2 from '/assets/images/icons/counter-four2.svg';
+import counterFourIcon3 from '/assets/images/icons/counter-four3.svg';
+import counterFourIcon4 from '/assets/images/icons/counter-four4.svg';
 
 export const counterFourContents = [
     {
@@ -764,8 +674,8 @@ export const counterFourContents = [
 
 
 // ========================= Checkout Page Data Start =========================
-import paymentMethodImg1 from '../../../public/assets/images/thumbs/paypal.png';
-import paymentMethodImg2 from '../../../public/assets/images/thumbs/visa.png';
+import paymentMethodImg1 from '/assets/images/thumbs/paypal.png';
+import paymentMethodImg2 from '/assets/images/thumbs/visa.png';
 
 export const paymentMethods = [
     {
@@ -805,10 +715,10 @@ export const billingLists = [
 
 
 // ========================= Cart Page Data Start =========================
-import cartThumb1 from '../../../public/assets/images/thumbs/property-1.png';
-import cartThumb2 from '../../../public/assets/images/thumbs/property-2.png';
-import cartThumb3 from '../../../public/assets/images/thumbs/property-3.png';
-import cartThumb4 from '../../../public/assets/images/thumbs/property-4.png';
+import cartThumb1 from '/assets/images/thumbs/property-1.png';
+import cartThumb2 from '/assets/images/thumbs/property-2.png';
+import cartThumb3 from '/assets/images/thumbs/property-3.png';
+import cartThumb4 from '/assets/images/thumbs/property-4.png';
 
 export const cartItems = [
     {       
@@ -923,10 +833,10 @@ export const accountAddress = [
     },
 ]
 
-import PropertyTableThumb1 from '../../../public/assets/images/thumbs/property-1.png';
-import PropertyTableThumb2 from '../../../public/assets/images/thumbs/property-2.png';
-import PropertyTableThumb3 from '../../../public/assets/images/thumbs/property-3.png';
-import PropertyTableThumb4 from '../../../public/assets/images/thumbs/property-4.png';
+import PropertyTableThumb1 from '/assets/images/thumbs/property-1.png';
+import PropertyTableThumb2 from '/assets/images/thumbs/property-2.png';
+import PropertyTableThumb3 from '/assets/images/thumbs/property-3.png';
+import PropertyTableThumb4 from '/assets/images/thumbs/property-4.png';
 
 export const propertyTables = [ 
     {
@@ -974,10 +884,10 @@ export const propertyTables = [
 
 
 // ========================= Project Page Data End =========================
-import projectItemThumb1 from '../../../public/assets/images/thumbs/project-img1.png';
-import projectItemThumb2 from '../../../public/assets/images/thumbs/project-img2.png';
-import projectItemThumb3 from '../../../public/assets/images/thumbs/project-img3.png';
-import projectItemThumb4 from '../../../public/assets/images/thumbs/project-img4.png';
+import projectItemThumb1 from '/assets/images/thumbs/project-img1.png';
+import projectItemThumb2 from '/assets/images/thumbs/project-img2.png';
+import projectItemThumb3 from '/assets/images/thumbs/project-img3.png';
+import projectItemThumb4 from '/assets/images/thumbs/project-img4.png';
 export const projectItems = [
     {
         id: 1,
