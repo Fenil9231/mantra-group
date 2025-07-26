@@ -15,9 +15,9 @@ const FaqPage = () => {
     return (
         <>
             <SEOHead 
-                title="Frequently Asked Questions - Mantra Group | Toronto Real Estate FAQ"
-                description="Get answers to common questions about buying, selling, and investing in Toronto real estate. Expert guidance from Mantra Group's experienced real estate professionals."
-                keywords="Toronto real estate FAQ, real estate questions, buying home Toronto, selling property GTA, real estate process, Mantra Group FAQ"
+                title="Real Estate Consultation FAQ - Mantra Group | Toronto GTA Expert Advice"
+                description="Get expert answers about our real estate consultation services in Toronto and GTA. Learn about our investment strategies, market analysis, and personalized guidance for buyers and investors."
+                keywords="real estate consultation Toronto, GTA property consultant, real estate investment advice, Toronto market analysis, property consultation services, real estate expert guidance"
                 canonicalUrl="/faq"
                 ogImage="/assets/images/faq-og.jpg"
                 structuredData={{
@@ -26,18 +26,42 @@ const FaqPage = () => {
                     "mainEntity": [
                         {
                             "@type": "Question",
-                            "name": "How do I start the home buying process in Toronto?",
+                            "name": "What real estate consultation services does Mantra Group offer?",
                             "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Start by getting pre-approved for a mortgage, then work with our experienced real estate agents to find properties that match your criteria and budget."
+                                "text": "Mantra Group provides comprehensive real estate consultation services including market analysis, investment strategy planning, property valuation, portfolio optimization, and personalized guidance for buying, selling, or investing in Toronto and GTA properties."
                             }
                         },
                         {
                             "@type": "Question",
-                            "name": "What are the current market conditions in the GTA?",
+                            "name": "How do I get started with a real estate consultation?",
                             "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Our team provides up-to-date market analysis and trends to help you make informed decisions about buying or selling in the Greater Toronto Area."
+                                "text": "Getting started is simple! Contact us through our website, phone, or email to schedule your initial consultation. We'll discuss your goals, analyze your situation, and create a customized strategy tailored to your specific real estate needs."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What makes Mantra Group different from other real estate consultants?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Our team combines deep local market knowledge with data-driven insights and personalized service. We focus on long-term relationships, transparent communication, and delivering measurable results that align with your financial goals and lifestyle preferences."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Do you work with first-time homebuyers?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Absolutely! We specialize in guiding first-time homebuyers through every step of the process. From mortgage pre-approval assistance to neighborhood selection and negotiation strategies, we ensure you make informed decisions with confidence."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What areas do you serve in the Greater Toronto Area?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "We serve the entire Greater Toronto Area including Toronto, Mississauga, Brampton, Markham, Richmond Hill, Vaughan, Oakville, Burlington, and surrounding communities. Our extensive local knowledge covers both urban and suburban markets."
                             }
                         }
                     ],

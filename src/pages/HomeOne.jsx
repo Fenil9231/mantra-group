@@ -10,8 +10,9 @@ import Counter from './../components/Counter';
 import Portfolio from '../components/Portfolio';
 import Testimonial from './../components/Testimonial';
 import Blog from './../components/Blog';
+import Cta from './../components/Cta';
 
-import FooterTwo from './../common/FooterTwo';
+import Footer from './../common/Footer';
 import Message from './../components/Message';
 import MobileMenu from '../common/MobileMenu';
 import OffCanvas from '../common/OffCanvas';
@@ -20,7 +21,7 @@ import SEOHead from '../components/SEOHead';
 const HomeOne = () => {
     return (
         <>
-            <SEOHead 
+            <SEOHead
                 title="Pre-Construction & Commercial Real Estate | Mantra Group - Serving South Asian Community"
                 description="Specialized in pre-construction and commercial real estate across Ontario and Alberta. Proudly serving the South Asian community with expert guidance in Punjabi, Hindi, and Urdu."
                 keywords="pre-construction Ontario, commercial real estate Alberta, South Asian real estate, Punjabi realtor, Hindi speaking agent, pre-construction condos Toronto"
@@ -45,24 +46,24 @@ const HomeOne = () => {
                     "serviceType": ["Real Estate Sales", "Property Management", "Real Estate Consultation"]
                 }}
             />
-            <OffCanvas/>
-            <MobileMenu/>
-            
+            <OffCanvas />
+            <MobileMenu />
+
             <main className="body-bg">
 
                 {/* Top header */}
-                <TopHeader/>
+                <TopHeader />
 
                 {/* Header */}
-                <Header 
-                    headerClass="" 
+                <Header
+                    headerClass=""
                     logoBlack={true}
                     logoWhite={false}
                     headerMenusClass=""
                     btnClass="btn btn-outline-light d-lg-block d-none"
                     btnLink="/contact"
                     btnText="Contact Us"
-                    spanClass="icon-right text-gradient" 
+                    spanClass="icon-right text-gradient"
                     showHeaderBtn={true}
                     showOffCanvasBtn={true}
                     offCanvasBtnClass=""
@@ -70,10 +71,10 @@ const HomeOne = () => {
                 />
 
                 {/* Banner */}
-                <Banner/>
-                
+                <Banner />
+
                 {/* About */}
-                <About/>
+                <About />
 
                 {/* Property section removed - focusing on pre-construction and commercial */}
 
@@ -82,25 +83,26 @@ const HomeOne = () => {
 
 
                 {/* Counter */}
-                <Counter/>
+                <Counter />
 
                 {/* Message */}
-                <Message/>
+                <Message />
 
                 {/* Portfolio */}
-                <Portfolio/>
+                <Portfolio />
 
                 {/* Testimonial */}
-                <Testimonial/>
+                <Testimonial />
 
                 {/* Blog */}
-                <Blog/>
+                <Blog />
 
+                {/* Cta */}
+                <Cta ctaClass="" />
 
+                {/* Footer */}
+                <Footer />
 
-                {/* FooterTwo */}
-                <FooterTwo/>
-                
             </main>
         </>
     );

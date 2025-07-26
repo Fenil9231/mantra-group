@@ -36,7 +36,7 @@ const Testimonial = () => {
                         subtitleClass="" 
                         title="Optimum Homes & Properties property for you" 
                         renderDesc={false}
-                        desc="Use receiving accounts a number a currencies and get paid like a local Use receivin accounts a number paid the most beautiful think"
+                        desc="Discover what our satisfied clients say about their real estate journey with us. From first-time homebuyers to seasoned investors, we've helped thousands achieve their property goals across the Greater Toronto Area."
                         renderButton={false}
                         renderBesideDesc={true}
                         buttonClass="btn-main"

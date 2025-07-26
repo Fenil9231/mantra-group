@@ -47,7 +47,7 @@ function testEmailAPI() {
     type: 'contact',
     data: {
       name: 'Test User',
-      email: 'test@example.com',
+      email: 'test@testclient.com',
       message: 'This is a test message',
       subject: 'Test Subject'
     }

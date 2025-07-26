@@ -30,7 +30,7 @@ const WorkProcessFour = () => {
                         <h2 className="working-process-item__number">01.</h2>
                         <div className="working-process-item__content">
                             <h6 className="working-process-item__title">Home Staging</h6>
-                            <p className="working-process-item__desc font-18">Lorem ipsum dolor sit amet consectetur</p>
+                            <p className="working-process-item__desc font-18">Professional staging to showcase your property's best features and attract potential buyers.</p>
                         </div>
                     </div>
                     <div className="working-process-item d-flex align-items-center">
@@ -38,7 +38,7 @@ const WorkProcessFour = () => {
                         <h2 className="working-process-item__number">02.</h2>
                         <div className="working-process-item__content">
                             <h6 className="working-process-item__title">Property Management</h6>
-                            <p className="working-process-item__desc font-18">Lorem ipsum dolor sit amet consectetur</p>
+                            <p className="working-process-item__desc font-18">Comprehensive property management services to maximize your investment returns.</p>
                         </div>
                     </div>
                     <div className="working-process-item d-flex align-items-center">
@@ -46,7 +46,7 @@ const WorkProcessFour = () => {
                         <h2 className="working-process-item__number">03.</h2>
                         <div className="working-process-item__content">
                             <h6 className="working-process-item__title">Property Appraisal</h6>
-                            <p className="working-process-item__desc font-18">Lorem ipsum dolor sit amet consectetur</p>
+                            <p className="working-process-item__desc font-18">Accurate property valuations to help you make informed buying and selling decisions.</p>
                         </div>
                     </div>
                     <div className="working-process-item d-flex align-items-center">
@@ -54,7 +54,7 @@ const WorkProcessFour = () => {
                         <h2 className="working-process-item__number">04.</h2>
                         <div className="working-process-item__content">
                             <h6 className="working-process-item__title">Investment Analysis</h6>
-                            <p className="working-process-item__desc font-18">Lorem ipsum dolor sit amet consectetur</p>
+                            <p className="working-process-item__desc font-18">Expert analysis to identify profitable real estate investment opportunities.</p>
                         </div>
                     </div>
                 </div>

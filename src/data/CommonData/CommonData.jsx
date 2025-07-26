@@ -127,25 +127,20 @@ export const footerInfos = [
 
 export const footerContactLinks = [ 
     {
-        text: 'Contact Us',
-        link: '/contact'
-    },
-    {
         text: 'About Us',
         link: '/about-us'
     },
     {
-        text: 'Terms & Conditions',
-        link: '/terms-and-conditions'
+        text: 'Contact Us',
+        link: '/contact'
     },
+ 
+   
     {
-        text: 'Privacy Policy',
-        link: '/privacy-policy'
+        text: 'Blog',
+        link: '/blog'
     },
-    {
-        text: 'FAQ',
-        link: '/faq'
-    },
+  
 ]
 
 export const footerUsefulLinks = [ 
@@ -153,13 +148,14 @@ export const footerUsefulLinks = [
         text: 'Services',
         link: '/services'
     },
-    {
-        text: 'Blog',
-        link: '/blog'
-    },
+    
     {
         text: 'Projects',
         link: '/project'
+    },
+    {
+        text: 'FAQ',
+        link: '/faq'
     },
 ]
 
@@ -210,10 +206,6 @@ export const BottomFooterLink = [
     {
         text: 'Privacy Policy',
         link: '/privacy-policy'
-    },
-    {
-        text: 'Contact Us',
-        link: '/contact'
     },
 ]
 

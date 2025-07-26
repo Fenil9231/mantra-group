@@ -81,7 +81,7 @@ const LoginSection = () => {
                                     <div className="loginRegister-content">
                                         <form onSubmit={formik.handleSubmit} method="POST">
                                             <h3 className="loginRegister__title text-poppins">Login to Mantra Group</h3>
-                                            <p className="loginRegister__desc mb-4 font-18">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, corrupti.</p>
+                                            <p className="loginRegister__desc mb-4 font-18">Access your Elite Property account to manage your listings, track inquiries, and stay updated with market insights.</p>
 
                                             <div className="row gy-lg-4 gy-3">
                                                 
@@ -242,7 +242,7 @@ export default LoginSection;
 //                                     <div className="loginRegister-content">
 //                                         <form onSubmit={formik.handleSubmit} method="POST">
 //                                             <h3 className="loginRegister__title text-poppins">Login to Mantra Group</h3>
-//                                             <p className="loginRegister__desc mb-4 font-18">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, corrupti.</p>
+
 
 //                                             <div className="row gy-lg-4 gy-3">
 //                                                 <div className="col-sm-6 col-xs-6">

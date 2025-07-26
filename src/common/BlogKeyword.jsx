@@ -6,10 +6,12 @@ const BlogKeyword = () => {
         <>
             <div className="blog-keyword flx-between gap-2">
                 <div className="blog-keyword__content">
-                    <span className="blog-keyword__text t text-heading fw-bold">Keyword: </span>
-                    <Link to="#" className="blog-keyword__link">Interiour</Link>
-                    <Link to="#" className="blog-keyword__link">Ux design</Link>
-                    <Link to="#" className="blog-keyword__link">Graphics</Link>
+                    <span className="blog-keyword__text t text-heading fw-bold">Keywords: </span>
+                    <Link to="#" className="blog-keyword__link">Toronto Real Estate</Link>
+                    <Link to="#" className="blog-keyword__link">GTA Properties</Link>
+                    <Link to="#" className="blog-keyword__link">Investment</Link>
+                    <Link to="#" className="blog-keyword__link">Home Buying</Link>
+                    <Link to="#" className="blog-keyword__link">Market Trends</Link>
                 </div>
                 <ul className="social-list style-two mt-0">
                     <li className="social-list__item">

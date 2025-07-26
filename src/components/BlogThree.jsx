@@ -12,7 +12,7 @@ const BlogThree = () => {
 
                     <SectionHeading
                         headingClass="style-center"  
-                        subtitle="Latest blog and news"
+                        subtitle="Property Investment Guide"
                         subtitleClass="bg-white" 
                         title="Investing in estate made lot easy" 
                         renderDesc={false}

@@ -10,7 +10,11 @@ import PageTitle from '../common/PageTitle';
 const BlogClassic = () => {
     return (
         <>
-        <PageTitle title="Mantra Group - Blog Classic" />
+        <PageTitle 
+            title="Toronto Real Estate Blog | Property Investment Tips & Market Insights | Cityscape Realty"
+            description="Stay informed with the latest Toronto real estate market trends, property investment strategies, mortgage tips, and expert insights. Your guide to successful real estate investing in the GTA."
+            keywords="Toronto real estate blog, property investment tips, Toronto market trends, real estate investing, GTA property news, mortgage advice Toronto, real estate insights"
+        />
 
             {/* Header */}
             <Header 

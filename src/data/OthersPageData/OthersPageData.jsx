@@ -893,49 +893,49 @@ export const projectItems = [
         id: 1,
         thumb: projectItemThumb1,
         title: 'Turning Dreams into Addresses Home State',
-        desc: 'Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorr viverra laoreet Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuebortis non, viverraAliquam eros justo, posuere loborti viverra laoreet matti ulamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorpe',
+        desc: 'Experience luxury living in this stunning residential development featuring modern architecture, premium finishes, and world-class amenities. Located in a prime neighborhood with excellent connectivity to downtown, shopping centers, and top-rated schools. This project represents the perfect blend of comfort, style, and investment potential for discerning homeowners.',
     },
     {
         id: 2,
         thumb: projectItemThumb2,
         title: 'Your journey homeownership starts here too',
-        desc: 'Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorr viverra laoreet Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuebortis non, viverraAliquam eros justo, posuere loborti viverra laoreet matti ulamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorpe',
+        desc: 'Discover your path to homeownership with our comprehensive real estate services. From first-time buyers to seasoned investors, we provide expert guidance through every step of the property acquisition process. Our dedicated team ensures you find the perfect home that matches your lifestyle, budget, and long-term investment goals.',
     },
     {
         id: 3,
         thumb: projectItemThumb3,
         title: 'Opening Doors to Your Dreams For Living',
-        desc: 'Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorr viverra laoreet Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuebortis non, viverraAliquam eros justo, posuere loborti viverra laoreet matti ulamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorpe',
+        desc: 'Unlock exceptional opportunities in premium real estate developments designed for modern living. Our portfolio features carefully selected properties that offer superior quality, strategic locations, and strong appreciation potential. Whether you seek a family home or investment property, we open doors to your real estate dreams.',
     },
     {
         id: 4,
         thumb: projectItemThumb4,
         title: 'Home is Where Your Story Begins',
-        desc: 'Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorr viverra laoreet Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuebortis non, viverraAliquam eros justo, posuere loborti viverra laoreet matti ulamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorpe',
+        desc: 'Begin your unique real estate story with properties that reflect your personal style and aspirations. Our curated selection of homes provides the foundation for creating lasting memories and building generational wealth. From cozy starter homes to luxury estates, every property tells a story of possibility and potential.',
     },
     {
         id: 5,
         thumb: projectItemThumb1,
         title: 'Building Trust, One Home at a Tim',
-        desc: 'Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorr viverra laoreet Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuebortis non, viverraAliquam eros justo, posuere loborti viverra laoreet matti ulamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorpe',
+        desc: 'Establish lasting relationships built on integrity, transparency, and exceptional service in every real estate transaction. Our commitment to excellence has earned the trust of countless families and investors throughout the region. Experience the difference that dedicated professionals make in achieving your property goals.',
     },
     {
         id: 6,
         thumb: projectItemThumb2,
         title: 'Brick by Brick Your Dream Home Awaits',
-        desc: 'Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorr viverra laoreet Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuebortis non, viverraAliquam eros justo, posuere loborti viverra laoreet matti ulamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorpe',
+        desc: 'Realize your vision of the perfect home with our meticulous attention to detail and personalized approach. Each property in our portfolio is carefully selected and presented to meet the highest standards of quality and value. Let us help you build your dream home brick by brick, ensuring every element exceeds your expectations.',
     },
     {
         id: 7,
         thumb: projectItemThumb3,
         title: 'Guiding You Home with Experienc',
-        desc: 'Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorr viverra laoreet Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuebortis non, viverraAliquam eros justo, posuere loborti viverra laoreet matti ulamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorpe',
+        desc: 'Benefit from decades of experience and deep market knowledge in navigating complex real estate transactions. Our seasoned professionals guide you through every aspect of buying, selling, or investing in property. Trust our expertise to help you make informed decisions and achieve optimal outcomes in your real estate journey.',
     },
     {
         id: 8,
         thumb: projectItemThumb4,
         title: 'A Tradition of Trust in Real Estate',
-        desc: 'Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorper viverra laoreet Aliquam eros justo, posuere lobor mattis fmentum ullam. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorr viverra laoreet Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuebortis non, viverraAliquam eros justo, posuere loborti viverra laoreet matti ulamcorper posuere viverra .Aliquam eros justo, posuere lobortis viverra laoreet augue mattis fmentum ullamcorpe',
+        desc: 'Continue a legacy of excellence in real estate services that spans generations of satisfied clients. Our tradition of trust is built on consistent results, ethical practices, and unwavering commitment to client success. Join the thousands of families who have trusted us with their most important real estate decisions.',
     },
 ]
 
@@ -944,7 +944,7 @@ export const challengeLists = [
         text: 'Unleash the Potential of your Interiors'
     },
     {
-        text: 'Aliquam eros justo, pos uere loborre loborti'
+        text: 'Professional Market Analysis and Property Valuation'
     },
     {
         text: 'Unleash the Potential of your Interiors'
@@ -983,8 +983,7 @@ export const contactTopInfos = [
     {
         icon: <i className="fas fa-envelope"></i>,
         title: 'Email Us',
-        textOne: 'info@realestate.ca',
-        textTwo: 'sales@realestate.ca',
+        text: 'info@mantragroup.ca',
         link: 'mailto:'
     },
     {
@@ -995,14 +994,14 @@ export const contactTopInfos = [
     {
         icon: <i className="fas fa-phone"></i>,
         title: 'Call Us',
-        textOne: '+1 (416) 555-0123',
-        textTwo: '+1 (647) 555-0456',
+        textOne: '+1 (647) 560-0736',
+        textTwo: '+1 (416) 890-1234',
         link: 'tel:'
     },
     {
         icon: <i className="fas fa-clock"></i>,
         title: 'Office Hours',
-        text: 'Monday - Friday: 9:00 AM - 7:00 PM, Saturday: 10:00 AM - 5:00 PM',
+        text: 'Monday - Friday: 9:00 AM - 7:00 PM, Saturday: 10:00 AM - 5:00 PM, Sunday: By Appointment',
     },
 ]
 // ========================= Project Page Data End =========================

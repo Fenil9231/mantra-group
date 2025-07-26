@@ -10,7 +10,7 @@ const BlogFive = () => {
 
                 <SectionHeading
                     headingClass="style-center"  
-                    subtitle="Latest blog and news"
+                    subtitle="Toronto Real Estate News"
                     subtitleClass="bg-white" 
                     title="Investing in estate made lot easy" 
                     renderDesc={false}

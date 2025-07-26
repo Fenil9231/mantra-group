@@ -8,9 +8,9 @@ const BlogTesti = () => {
                 <div className="blog-testi__thumb">
                     <img src={BlogTestiThumb} alt=""/>
                 </div>
-                <p className="blog-testi__desc">Real estate is a lucrative industry that involves the buying and selling properties It encompasses residential commercial and industrial properties. Real estate agents play a crucial role in facilitating at transactions and helping commercial, and industrial </p>
+                <p className="blog-testi__desc">"Working with Elite Property has been an exceptional experience. Their deep understanding of the Toronto real estate market and commitment to client satisfaction made our home buying journey smooth and successful. Their expertise in both residential and commercial properties is unmatched."</p>
                 <div className="blog-testi__bottom flx-between">
-                    <span className="blog-testi__name text-gradient">Mark wood</span>
+                    <span className="blog-testi__name text-gradient">Sarah Johnson</span>
                     <img src="assets/images/icons/quote-two.svg" alt="" className="blog-testi__quote"/>
                 </div>
             </div>   

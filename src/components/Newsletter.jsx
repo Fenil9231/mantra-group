@@ -9,7 +9,7 @@ const Newsletter = () => {
                 <div className="container container-two">
                     <div className="newsletter-content text-center background-img" style={{ backgroundImage: `url(${NewsletterThumb})`}}>
                         <h2 className="newsletter-content__title text-white">Subscribe To Our Newsletter</h2>
-                        <p className="newsletter-content__desc text-white fw-light font-18">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        <p className="newsletter-content__desc text-white fw-light font-18">Get exclusive access to new property listings, market insights, and investment opportunities before they hit the market.</p>
                         
                         <NewsletterForm formClass="" inputClass="white-bordered-input" iconClass="text-gradient"/>
 

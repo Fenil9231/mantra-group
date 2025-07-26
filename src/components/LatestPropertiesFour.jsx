@@ -15,23 +15,23 @@ const LatestPropertiesFour = () => {
                 <div className="col-lg-6 ps-xl-5">
                     <div className="latest-properties-four__content">
                         <div className="section-heading style-left">
-                            <span className="section-heading__subtitle bg-white"> <span className="text-gradient fw-semibold">Latest Proparties</span> </span>
+                            <span className="section-heading__subtitle bg-white"> <span className="text-gradient fw-semibold">Latest Properties</span> </span>
                             <h2 className="section-heading__title">Real estate Investing in made it lot easy</h2>
                         </div>
     
                         <div className="latest-properties-four__item d-flex align-items-start">
                             <span className="latest-properties-four__icon"> <i className="fas fa-check text-gradient"></i> </span>
                             <div className="latest-properties-four__info">
-                                <h6 className="latest-properties-four__title">Felis in quam volutpat </h6>
-                                <p className="latest-properties-four__desc font-18">Lorem ipsum dolor consectetur notte massa sapien samet. Aucibus sed sem non, mattis commodo nisi.</p>
+                                <h6 className="latest-properties-four__title">Premium Property Access</h6>
+                                <p className="latest-properties-four__desc font-18">Access premium properties with flexible financing options and expert guidance throughout your investment journey.</p>
                             </div>
                         </div>
     
                         <div className="latest-properties-four__item d-flex align-items-start">
                             <span className="latest-properties-four__icon"> <i className="fas fa-check text-gradient"></i> </span>
                             <div className="latest-properties-four__info">
-                                <h6 className="latest-properties-four__title">Sed mi et in neque mattis </h6>
-                                <p className="latest-properties-four__desc font-18">Lorem ipsum dolor consectetur notte massa sapien samet. Aucibus sed sem non, mattis commodo nisi.</p>
+                                <h6 className="latest-properties-four__title">Expert Market Analysis</h6>
+                                <p className="latest-properties-four__desc font-18">Comprehensive market analysis and personalized property recommendations tailored to your investment goals.</p>
                             </div>
                         </div>
                         

@@ -105,7 +105,7 @@ const LoginRegister = ({titleText, firstNameCol, showFirstName, lastNameCol, sho
                                     <div className="loginRegister-content">
                                         <form onSubmit={formik.handleSubmit} method="POST">
                                             <h3 className="loginRegister__title text-poppins">{titleText} to Mantra Group</h3>
-                                            <p className="loginRegister__desc mb-4 font-18">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, corrupti.</p>
+                                            <p className="loginRegister__desc mb-4 font-18">Join Elite Property to access exclusive listings, market insights, and personalized real estate services.</p>
 
                                             <div className="row gy-lg-4 gy-3">
                                                 {

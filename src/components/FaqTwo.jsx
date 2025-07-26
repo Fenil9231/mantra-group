@@ -10,11 +10,11 @@ const FaqTwo = () => {
 
                 <SectionHeading
                     headingClass=""  
-                    subtitle="Ask question"
+                    subtitle="Frequently Asked Questions"
                     subtitleClass="bg-gray-100" 
-                    title="Let us find the perfect the  property for you" 
-                    renderDesc={false}
-                    desc=""
+                    title="Expert Real Estate Consultation Answers" 
+                    renderDesc={true}
+                    desc="Get answers to the most common questions about our real estate consultation services in Toronto and the Greater Toronto Area."
                     renderButton={false}
                     buttonClass="btn-main"
                     buttonText="View More"

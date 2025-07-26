@@ -55,7 +55,7 @@ const CommentForm = () => {
         <>
             <div className="comment-form" id="comment-box">
                 <h5 className="comment-form__title"> Leave a Comment </h5>
-                <p className="comment-form__desc"> By using form u agree with the message sorage, you can contact us directly now By using form agree with the message sorage, you can contact us directly now </p>
+                <p className="comment-form__desc"> Share your thoughts and questions about Toronto real estate. We value your feedback and will respond to your comments promptly. </p>
                 <form onSubmit={handleSubmit} autoComplete="off">
                     <div className="row gy-4">
                         <div className="col-sm-6">
