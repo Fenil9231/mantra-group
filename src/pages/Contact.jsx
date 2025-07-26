@@ -65,11 +65,11 @@ const Contact = () => {
 
                 <div className="contact-map address-map">
                     <iframe 
-                        src={import.meta.env.VITE_GOOGLE_MAPS_EMBED_URL || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.30943582457!2d-79.54286805!3d43.718371149999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sus!4v1707037970965!5m2!1sen!2sus"}
+                        src={import.meta.env.VITE_GOOGLE_MAPS_EMBED_URL || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.234567890123!2d-79.66774!3d43.62185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b47c123456789%3A0x123456789abcdef0!2s100%20Matheson%20Blvd%20E%2C%20Mississauga%2C%20ON%20L4Z%203P8%2C%20Canada!5e0!3m2!1sen!2sca!4v1734567890123!5m2!1sen!2sca"}
                         allowFullScreen="" 
                         loading="lazy" 
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="Mantra Group Office Location"
+                        title="Mantra Group Office Location - 100 Matheson Blvd E, Mississauga"
                     ></iframe>
                 </div>
 

@@ -12,14 +12,14 @@ const Blog = () => {
 
                     <SectionHeading 
                         headingClass="section-heading style-left style-flex flx-between align-items-end gap-3"  
-                        subtitle="Latest Product"
+                        subtitle="Featured Properties"
                         subtitleClass="" 
                         title="Prestige Property Management  property for you" 
                         renderDesc={false}
                         desc=""
                         renderButton={true}
                         buttonClass="btn-outline-main"
-                        buttonText="View Moreee"
+                        buttonText="View More"
                         buttonLink='/blog'
                     />
 

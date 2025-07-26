@@ -39,13 +39,13 @@ const BlogDetailsSection = () => {
                                     <li className="blog-infos__item">
                                         <Link to="#" className="blog-infos__link"> 
                                             <span className="icon"><i className="fas fa-comment-alt"></i> </span>
-                                            Web Design
+                                            Real Estate
                                         </Link>
                                     </li>
                                     <li className="blog-infos__item">
                                         <Link to="#" className="blog-infos__link"> 
                                             <span className="icon"> <i className="fas fa-comments"></i></span>
-                                            Comments (05)
+                                            Comments
                                         </Link>
                                     </li>
                                 </ul>

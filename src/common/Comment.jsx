@@ -16,7 +16,7 @@ const Comment = () => {
                         </div>
                         <div className="comment-list__content">
                             <div className="flx-align gap-2 gap-sm-4">
-                                <h6 className="comment-list__name font-16">Stanio lainto</h6>
+                                <h6 className="comment-list__name font-16">Michael Thompson</h6>
                                 <span className="comment-list__date">December 16, 2023</span>
                                 <ul className="social-list mt-0 p-0 border-0 gap-3">
                                     <li className="social-list__item">
@@ -33,7 +33,7 @@ const Comment = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <p className="comment-list__desc">Ished fact that a reader will be distrol acted bioii the.ished fact that a reader will be distrol acted laoreet Aliquam fact that a reader will be distrol acted Aliquam eros justo.</p>
+                            <p className="comment-list__desc">Excellent service and professional guidance throughout the entire property buying process. The team's market knowledge and attention to detail made our home purchase seamless and stress-free.</p>
                             <a className="comment-list__reply" href="#comment-box"> Reply </a>
                         </div>
                     </li>
@@ -43,7 +43,7 @@ const Comment = () => {
                         </div>
                         <div className="comment-list__content">
                             <div className="flx-align gap-2 gap-sm-4">
-                                <h6 className="comment-list__name font-16">Court Henry</h6>
+                                <h6 className="comment-list__name font-16">Jennifer Martinez</h6>
                                 <span className="comment-list__date">December 16, 2023</span>
                                 <ul className="social-list mt-0 p-0 border-0 gap-3">
                                     <li className="social-list__item">
@@ -60,7 +60,7 @@ const Comment = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <p className="comment-list__desc">Ished fact that a reader will be distrol acted bioii the.ished fact that a reader will be distrol acted laoreet Aliquam fact that a reader will be distrol acted Aliquam eros justo.</p>
+                            <p className="comment-list__desc">Outstanding real estate expertise! They helped us find the perfect investment property and provided valuable insights into market trends. Highly recommend their services to anyone looking for quality real estate solutions.</p>
                             <a className="comment-list__reply" href="#comment-box"> Reply </a>
                         </div>
                     </li>

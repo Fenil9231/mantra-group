@@ -31,7 +31,7 @@ const ProjectDetailsSection = () => {
                                 <p className="project-details__desc font-18">{location.state.desc.slice(251, 900)}</p>
                                 
                                 <h6 className="border-title">Project challeng</h6>
-                                <p className="project-details__desc font-18">Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis  viverra laoreet augue mattis ferment ullamcorer viverra laoreet Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper ere viverra .Aliquam eros justo, posuere lobortis non, viverra Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere </p>
+                                <p className="project-details__desc font-18">This premium real estate development project presented unique challenges in urban planning, sustainable design, and market positioning. Our team successfully navigated complex zoning requirements, environmental considerations, and community integration to deliver a landmark residential complex that sets new standards for luxury living in the metropolitan area.</p>
 
                                 <ul className="text-list-two">
                                     {

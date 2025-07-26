@@ -7,7 +7,7 @@ const testData = {
   type: 'contact',
   data: {
     name: 'John Doe',
-    email: 'john.doe@example.com',
+    email: 'john.doe@testclient.com',
     phone: '+1234567890',
     subject: 'Test Email from API',
     message: 'This is a test message to verify the email functionality is working correctly.'

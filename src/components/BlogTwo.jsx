@@ -12,7 +12,7 @@ const BlogTwo = () => {
 
                     <SectionHeading
                         headingClass="section-heading style-left style-flex flx-between align-items-end gap-3"  
-                        subtitle="Latest blog and news"
+                        subtitle="Real Estate Insights"
                         subtitleClass="" 
                         title="Investing in estate made lot easy" 
                         renderDesc={false}

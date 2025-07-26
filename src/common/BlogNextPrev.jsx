@@ -14,7 +14,7 @@ const BlogNextPrev = () => {
                     </button>
                     <div className="blog-nextPrev__content">
                         <span className="blog-nextPrev__text">Previous post</span>
-                        <h6 className="blog-nextPrev__title mb-0">Insure your peace of mind</h6>
+                        <h6 className="blog-nextPrev__title mb-0">Toronto Housing Market Trends 2024</h6>
                     </div> 
                 </div>
                 <div className="blog-nextPrev__item flx-align flex-row-reverse ms-auto">
@@ -23,7 +23,7 @@ const BlogNextPrev = () => {
                     </button>
                     <div className="blog-nextPrev__content text-end">
                         <span className="blog-nextPrev__text">Next post</span>
-                        <h6 className="blog-nextPrev__title mb-0">Insure your peace of mind</h6>
+                        <h6 className="blog-nextPrev__title mb-0">Investment Properties in GTA</h6>
                     </div> 
                 </div>
             </div>   

@@ -11,11 +11,11 @@ const FaqContactUs = () => {
 
                         <SectionHeading
                             headingClass=""  
-                            subtitle="Contact uss"
+                            subtitle="Contact Us"
                             subtitleClass="bg-gray-100" 
-                            title="Do you have any question? " 
+                            title="Still have questions about our consultation services?" 
                             renderDesc={true}
-                            desc="For your car we will do everything  advice, repairs and maintenance. We are the some preferred choice by many car owners because"
+                            desc="Our experienced real estate consultants are here to help. Get personalized answers to your specific questions and discover how we can assist with your real estate goals in the Greater Toronto Area."
                             renderButton={false}
                             buttonClass="btn-main"
                             buttonText="View More"

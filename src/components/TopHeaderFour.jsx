@@ -18,7 +18,7 @@ const TopHeaderFour = () => {
                         </div>
                         <div className="header-info__item flx-align">
                             <span className="header-info__icon text-gradient"><i className="fas fa-envelope"></i></span>
-                            <a href="mailto:" className="header-info__text text-body">info@example.com</a>
+                            <a href="mailto:info@eliteproperty.ca" className="header-info__text text-body">info@eliteproperty.ca</a>
                         </div>
                     </div>
                 </div>

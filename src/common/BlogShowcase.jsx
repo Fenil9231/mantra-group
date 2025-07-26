@@ -5,7 +5,7 @@ const BlogShowcase = () => {
         <>
              <div className="blog-showcase">
                 <h5 className="blog-showcase__title">Showcase your talent with our portfolio</h5>
-                <p className="blog-showcase__desc">Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum ullamcorper viverra laoreet Aliquam eros </p>
+                <p className="blog-showcase__desc">Discover exceptional real estate opportunities with our comprehensive portfolio of premium properties. From luxury residential estates to commercial investments, we showcase the finest properties that match your vision and investment goals.</p>
                 <div className="blog-showcase__content flx-align gap-4">
                     <div className="blog-showcase__thumb">
                         <img src="assets/images/thumbs/blog-showcase.png" alt=""/>

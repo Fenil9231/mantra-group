@@ -8,7 +8,7 @@ const EMAIL_CONFIG = {
     // API endpoint for serverless email function
     apiEndpoint: import.meta.env.VITE_EMAIL_API_ENDPOINT || '/api/send-email',
     // Company Information
-    adminEmail: import.meta.env.VITE_ADMIN_EMAIL || 'admin@example.com',
+    adminEmail: import.meta.env.VITE_ADMIN_EMAIL || 'info@eliteproperty.ca',
     fromName: import.meta.env.VITE_FROM_NAME || 'Website Contact',
     companyName: import.meta.env.VITE_COMPANY_NAME || 'Mantra Group',
     siteUrl: import.meta.env.VITE_SITE_URL || window.location.origin
@@ -17,7 +17,7 @@ const EMAIL_CONFIG = {
 // Check if configuration is properly set
 const isConfigured = () => {
     return EMAIL_CONFIG.apiEndpoint !== '/api/send-email' ||
-           EMAIL_CONFIG.adminEmail !== 'admin@example.com';
+           EMAIL_CONFIG.adminEmail !== 'info@eliteproperty.ca';
 };
 
 // Log configuration status in development

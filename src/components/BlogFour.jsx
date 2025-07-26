@@ -11,7 +11,7 @@ const BlogFour = () => {
 
                     <SectionHeading
                         headingClass="style-center"  
-                        subtitle="Latest blog and news"
+                        subtitle="Market Updates & Trends"
                         subtitleClass="bg-white" 
                         title="Investing in estate made lot easy" 
                         renderDesc={false}

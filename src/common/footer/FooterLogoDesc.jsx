@@ -7,7 +7,7 @@ const FooterLogoDesc = () => {
             <div className="footer-item__logo">
                 <LogoWhite/>
             </div>
-            <p className="footer-item__desc">It is a long established fact that a reader will be distracted</p>
+            <p className="footer-item__desc">Your trusted partner in finding the perfect property. We specialize in residential and commercial real estate solutions tailored to your needs.</p>
                 
         </>
     );
