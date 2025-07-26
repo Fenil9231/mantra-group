@@ -983,7 +983,8 @@ export const contactTopInfos = [
     {
         icon: <i className="fas fa-envelope"></i>,
         title: 'Email Us',
-        text: 'info@mantragroup.ca',
+        textOne: 'info@mantragroup.ca',
+        textTwo: 'sales@mantragroup.ca',
         link: 'mailto:'
     },
     {
