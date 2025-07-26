@@ -23,27 +23,22 @@ const ContactTop = () => {
                                             <h5 className="contact-card__title">{contactTopInfo.title}</h5>
 
                                             {
-                                contactTopInfo.link ? (
-                                    contactTopInfo.textOne && contactTopInfo.textTwo ? (
-                                        <>
-                                            <p className="contact-card__text font-18">
-                                                <Link to={`${contactTopInfo.link} ${contactTopInfo.textOne}`} className="link">{contactTopInfo.textOne}</Link>
-                                            </p>
-                                            <p className="contact-card__text font-18">
-                                                <Link to={`${contactTopInfo.link} ${contactTopInfo.textTwo}`} className="link">{contactTopInfo.textTwo}</Link>
-                                            </p>
-                                        </>
-                                    ) : (
-                                        <p className="contact-card__text font-18">
-                                            <Link to={`${contactTopInfo.link}${contactTopInfo.text}`} className="link">{contactTopInfo.text}</Link>
-                                        </p>
-                                    )
-                                ) : (
-                                    <p className="contact-card__text font-18">
-                                        {contactTopInfo.text}
-                                    </p>
-                                )
-                            }
+                                                contactTopInfo.link ? (
+                                                    <>
+                                                        <p className="contact-card__text font-18">
+                                                            <Link to={`${contactTopInfo.link} ${contactTopInfo.textOne}`} className="link">{contactTopInfo.textOne}</Link>
+                                                        </p>
+                                                        <p className="contact-card__text font-18">
+                                                            <Link to={`${contactTopInfo.link} ${contactTopInfo.textTwo}`} className="link">{contactTopInfo.textTwo}</Link>
+                                                        </p>
+                                                    </>
+
+                                                ) : (
+                                                    <p className="contact-card__text font-18">
+                                                        {contactTopInfo.text}
+                                                    </p>
+                                                )
+                                            }
                                         </div>
                                     </div>
                                     
